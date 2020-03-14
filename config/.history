@@ -1,0 +1,346 @@
+cd /d "d:\Documents\Logic Solutions\01_projects\community\
+rmdir /s /q qcs-all\
+ssh lele@47.103.215.243
+git config --global http.postBuffer 524288000
+git clone git@git.logicsolutions.com:quantum/qcs-all.git 
+ftp
+ftp open 
+ftp open 47.103.215.243
+ftp get
+mkdir
+mkdir a
+cd a
+scp lele@47.103.215.243:`/qcs-all.zip ./
+scp lele@47.103.215.243:~/qcs-all.zip ./
+del qcs-all.zip 
+scp lele@47.103.215.243::~/backupfiles/qcs-all.zip ./
+scp lele@47.103.215.243:~/backupfiles/qcs-all.zip ./
+git config --global http.lowSpeedLimit 0
+git config --global http.lowSpeedTime 999999
+git clone https://git.logicsolutions.com/quantum/qcs-all.git
+git  log
+cd .git\
+cd ..\b\
+cd 01_projects\
+cd /d "D:\Documents\Logic Solutions\01_projects\qcs-all\ibm-sds
+git branch client/simcere-dev
+git branch -d client/simcere-dev 
+git chechout  client/simcere-dev
+git checkout  client/simcere-dev
+ping simcere.qcs.com
+git diff logic-microservices-parent/system-server/src/main/java/com/qcs/configuration/ws/EmployeeRest.java
+git checkout logic-microservices-parent/system-server/src/main/java/com/qcs/configuration/ws/EmployeeRest.java
+git add logic-microservices-parent/system-server/src/main/java/com/system/service/impl/UserService.java
+git commit -m "XSYY-335 修复角色更新接口去重"
+git push 
+start 
+start ./
+start .\
+echo %java_home
+echo \%java_home
+echo \$java_home
+echo $java_home
+set java_home
+set path
+set path | grep java*
+echo q
+echo qwser | grep w
+echo qwser | find "w"
+echo qwser | find /i "w"
+echo qwser | find /I "w"
+echo qwser | findstr /r "w"
+find
+find /?
+ls .gitconfig | grep "a"
+ls .gitconfig 
+cat .gitconfig 
+cat .gitconfig | grep "l"
+cat .gitconfig | grep "low"
+cat .gitconfig | grep "a"
+cat .gitconfig | find "a"
+cat .gitconfig | find "wfg"
+cat .gitconfig | find "fuguo"
+cat .gitconfig | find "name"
+khkuigyuftyrdtr
+cd /d "D:\Documents\Logic Solutions\01_projects\
+cd qcs-all\
+git --ref log
+git -ref log
+git remote -v
+gi diff client/simcere-dev
+git diff client/simcere-dev
+mvn
+ls ../../../../
+ls ../../../ -R | grep .ignore
+ls ../../../ -R | grep .gitignore
+ls ../../../ -R 
+git diff client/simcere-dev 
+cat .gitignore 
+git branch feature/XSYY-215
+git checkout  feature/XSYY-215
+git diff feature/XSYY-215 
+mvn test
+mvn clean
+mvn reimport
+mvn ?
+mvn -help
+cd /d "d:\Documents\Logic Solutions\01_projects\qcs-all\ibm-sds\
+cd logic-microservices-parent\
+git diff system-server/src/main/java/com/system/service/impl/PdfService.java
+cd system-server\
+mvn spring-boot:run
+cd /d d:\Desktop\
+open 2.html 
+ 2.html 
+ ls
+cd .m2\
+cd repository\
+rm -r .m2\
+ls -a]
+cd /d D:\Desktop\
+start 2.html 
+cd /d D:/
+rm *.xls
+cd /d D:\Documents\Logic Solutions\01_projects\qcs-all\ibm-sds\back_end\logic-microservices-parent (feature/XSYY-215 -> origin) 
+git checkout system-server/src/main/resources/application-dev.yml
+git commit -m "XSYY-215 修改报表导出为Excel表格完成"
+gitstatus
+git push --set-upstream origin feature/XSYY-215
+git branch feature/XSYY-320/XSYY-337
+git branch -d feature/XSYY-215
+git diff system-server/src/main/java/com/qcs/inspection/ws/CorrectiveActionRest.java
+git checkout system-server/src/main/java/com/qcs/inspection/ws/CorrectiveActionRest.java
+git add system-server/src/main/resources/com/qcs/inspection/persistence/read/CorrectiveActionReadMapper.xml
+git commiy -m "XSYY-337 XSYY-320 '优化报表，只帅选出有数据的人员'完成"
+git commit -m "XSYY-337 XSYY-320 '优化报表，只帅选出有数据的人员'完成"
+git branch 
+fit checkout client/simcere-dev
+git checkout feature/XSYY-320/XSYY-337
+git push --set-upstream origin feature/XSYY-320/XSYY-337
+git checkout client/simcere-dev
+git branch -d feature/XSYY-320/XSYY-337 
+git pull origin client/simcere-dev
+git merge feature/XSYY-320/XSYY-337
+git remote update origin --prune
+git checkout feature/XSYY-320/XSYY-337 
+git log eature/XSYY-320/XSYY-337 ^client/simcere-dev
+git pull origin client/simcere-dev 
+git merge feature/XSYY-320/XSYY-337 
+git diff system-server/src/main/java/com/quantum/training/ws/ClassRest.java
+git checkout system-server/src/main/java/com/quantum/training/ws/ClassRest.java
+git diff system-server/src/main/java/com/system/enums/ErrorMessageEnum.java
+git add  system-server/src/main/java/com/system/enums/ErrorMessageEnum.java
+git diff system-server/src/main/java/com/quantum/training/service/impl/ClassService.java
+git add system-server/src/main/java/com/quantum/training/service/impl/ClassService.java
+git commit -m "XSYY-316 修复排课更新和插入接口，报错信息不全面的bug，报错提示已优化，需要前台做日期空值处理，部分表单需要判空验证"
+pwd | new console 
+git ref log
+git log --graph --decorate --oneline --simplify-by-decoration --all
+git tag -l -n
+git tag
+git show
+cd ../../../
+cd ../../
+ld
+cd ../
+wexcel sim
+wexcel simcere.xlsx 
+wexcel
+cd /d D:\Documents\Logic Solutions\01_projects\qcs-all\ibm-sds\
+mysql -ulele -p
+net mysql stop
+net  stop mysql
+net start  mysql
+cd c:/
+cd /d c:/
+git brabch
+git branch -a
+git checkout  back_end/logic-microservices-parent/system-server/src/main/resources/application-dev.yml
+git checkout client/nippon-master
+java -jar arthas-boot.jar
+cd /d D:\Applocations\53_java\12_alibaba_arthas\arthas-packaging-3.1.7-bin
+java -jar arthas-boot.jar -h
+java -jar arthas-boot.jar --version
+java -jar arthas-demo.jar 
+stop
+tasklist | grep arthas
+tasklist | grep 'arthas'
+cd ../../../../
+cd "Documents\Logic Solutions\01_projects\qcs-all\
+ cd ibm-sds\
+sl
+cd back_end\
+git checkout *.java
+git checkout *.xml
+ipconfig
+ping 192.168.1.9
+cd /d "d:\Documents\Logic Solutions\01_projects\qcs-all\
+cd /d d:\Documents\Logic Solutions\01_projects\qcs-all\ibm-sd
+cd /d d:\Documents\Logic Solutions\01_projects\qcs-all
+cd ibm-sds\
+arthas
+.sh
+whereisarthas
+whereis arthas
+set ARTHAS_HOME
+cd /d %ARTHAS_HOME%/
+cd ~
+cd 
+cd /home
+cd ~/
+cd #
+cd $
+cd %USER_HOME%
+set%USER_HOME%
+set %USER_HOME%
+cd /d C:/lele
+cd /d C:/user
+cd /d C:/users
+takList
+tak List
+task List
+Listtask
+listtask
+task
+list task
+ps
+ps -af
+tasklist | grep java
+cd %arthas_home%
+cd %ARTHAS_HOME%
+set %ARTHAS_HOME%
+set %JAVA_HOME%
+cd  %JAVA_HOME%
+cd  %ARTHAS_HOME%
+cd /d  %ARTHAS_HOME%
+cd back_end\logic-microservices-parent\
+nginxd stop
+kill tssk java
+kill task java
+killtask java
+taskkill java
+taskkill /f java
+taskkill /?
+taskkill /im java
+taskkill /im java.exe
+taskkill /f /im java.exe
+taskkill /f /im postman.exe
+taskkill /f /im chrome'.exe
+taskkill /f /im chrome.exe
+taskkill /f /im firefox.exe
+exit
+tasklist
+cd /d %ARTHAS_HOME%
+cd /d D:\Documents\Logic Solutions\01_projects\qcs-all\ibm-sds\back_end\logic-microservices-parent
+nginxd start
+java -jar arthas-boot.jar 
+get log
+clean
+clear
+git branch
+git stash 
+git checkout client/simcere-dev 
+cls
+git diff
+git checkout -b client/QCS-4291
+git diff system-server/src/main/java/com/simcere/service/impl/SimcereService.java
+set %M2_HOME%
+cd /d D:\Applocations\46_cmder\cmder\Cmder.exe
+cd /d "D:\Downloads\Compressed\taobao-sdk-java-auto_1479188381469-20200110.jar"
+cd /d "D:\Downloads\Compressed\"
+git staus
+git 
+rmdir /s /q STM32_test\
+del /s /q STM32_test\
+git config list
+git local --list
+git config user.name "lele"
+git commit -m "创建项目结构，部署README文件"
+git remote add origin git@github.com:leleplus/driver.git
+touch .gitignore
+ls -al
+git commit -m "添加ignore忽略无需提交的文件"
+git tag -a "beta-v0.0" -m "创建项目之后的第一个版本"
+git push --tag
+git checkout -b dev/arm
+git commit -m "完成led灯和延时函数相关的代码"
+git push --set-upstream origin dev/arm
+git commit -m "完成按键函数的编写"
+git reflog
+cd /d D:\Documents\GraduationDesign\driverManager_code\stm32_client\
+git diff driver/src/HARDWARE/src/key.c
+git checkout driver/src/HARDWARE/src/key.c
+git rm -r --cached
+subl .gitignore 
+git rm -r --cached .
+git rm  --cached .
+git rm  -r --cached .
+git commit -m "update .gitignore文件，优化远程仓库代码结构"
+echo %path%
+echo %CMDER_HOME%
+echo %m2%
+set %cmder-homr%
+set %cmder_home%
+Cmder.exe registerAll
+Cmder.exe /REGISTER ALL
+git --version
+ssh -v
+ssh -version
+ssh
+ssh-keygen -t rsa -C "fgwang.660@gmail.com"
+cd .ssh\
+cat id_rsa.pub 
+cd /d d:\Documents\
+mkdir driver
+cd driver\
+cat ~/.ssh\id_rsa.pub 
+ls -a
+cd ..
+mkdir temp
+cd temp\
+git add .
+git config user.email "11@qq.com"
+git config --list 
+d:
+d:/
+git clone git@github.com:leleplus/driver.git
+git commit -m "init readme"
+pwd
+git diff README.md 
+subl
+cat README.md 
+cat ~/.ssh/id_rsa.pub 
+cat ~/.ssh/id_rsa.pub
+ssh lele@www.leleplus.fun
+ls
+set %path%
+wget
+wget --help
+git statsu
+git checkout OS-optimization 
+cd /d d:\software\03_cmder\
+git statis
+git rm --cached *
+rm -r .git\
+rm -rf .git\
+git init
+git config user.name "witt"
+git config user.email "witt"
+git config user.email "fgwang.660@gmail.com"
+git config --list
+git remote add origin git@github.com:leleplus/command.git
+git pull
+git pull origin master:master
+git push -u origin master
+cd /d d:\Documents\notes\
+git checkout master 
+start .
+git add README.md 
+git commit -m "编写仓库说明readme.md文件爱你"
+git commit --amend -m "编写仓库说明readme.md文件"
+git log
+git push
+git status
+subl notes\version_control\git\Git使用教程.md 
+git config  core.autocrlf false
+git add -A
