@@ -135,7 +135,6 @@ git add system-server/src/main/java/com/quantum/training/service/impl/ClassServi
 git commit -m "XSYY-316 修复排课更新和插入接口，报错信息不全面的bug，报错提示已优化，需要前台做日期空值处理，部分表单需要判空验证"
 pwd | new console 
 git ref log
-git log --graph --decorate --oneline --simplify-by-decoration --all
 git tag -l -n
 git show
 cd ../../../
@@ -231,7 +230,6 @@ exit
 tasklist
 cd /d %ARTHAS_HOME%
 cd /d D:\Documents\Logic Solutions\01_projects\qcs-all\ibm-sds\back_end\logic-microservices-parent
-nginxd start
 java -jar arthas-boot.jar 
 get log
 clean
@@ -291,7 +289,6 @@ cd .ssh\
 cat id_rsa.pub 
 cd /d d:\Documents\
 mkdir driver
-cd driver\
 cat ~/.ssh\id_rsa.pub 
 ls -a
 cd ..
@@ -309,13 +306,10 @@ subl
 cat README.md 
 cat ~/.ssh/id_rsa.pub 
 cat ~/.ssh/id_rsa.pub
-ssh lele@www.leleplus.fun
-ls
 set %path%
 wget
 wget --help
 git statsu
-git checkout OS-optimization 
 git statis
 git rm --cached *
 rm -r .git\
@@ -324,32 +318,73 @@ git init
 git config user.name "witt"
 git config user.email "witt"
 git config user.email "fgwang.660@gmail.com"
-git config --list
 git remote add origin git@github.com:leleplus/command.git
-git pull
 git pull origin master:master
 git push -u origin master
-cd /d d:\Documents\notes\
-git checkout master 
 git add README.md 
 git commit -m "编写仓库说明readme.md文件爱你"
 git commit --amend -m "编写仓库说明readme.md文件"
-git log
 subl notes\version_control\git\Git使用教程.md 
 git config  core.autocrlf false
 git commit -m "添加cmder工程文件"
 cat "Version 1.3.12.915" 
 git tag -a V1.0
 git tag show
-git tag
 git tag -d show
 git show V1.0
 git push origin V1.0
-start .
 git commit -m "添加git初始化仓库的使用笔记"
 git add .
 git commit -m "添加git标签学习笔记"
-git push
 cd /d d:\software\03_cmder\
+git commit -m "修改命令提示符为$,并且不换行"
+git tag -a V2.0 
+git push origin V2.0
+cat d:\Documents\logic\epms\EPMS\front_end\README.md | grep 123
+git log --oneline --graph --all
+cd /d d:\Documents\logic\epms\EPMS\
+git log --oneline --graph --decorate --all
+rm -rf AdobeAcrobatReaderDC_2020.006.20034_Green\
+ssh lele@www.leleplus.fun
+cd /d d:\Documents\notes\
+git checkout master 
+mysqld --initialize --user=root --console
+cd ..\front_end\
+cat README.md | grep node
+git config --list
+nginxd stop -a
+nginxd stop -a 
+nginxd start
+node --max_old_space_size=3072 node_modules/@angular/cli/bin/ng serve --open --proxy-config proxy.config.json
+git log
+git add system-server/src/main/resources/com/logic/epms/persistence/write/MonitoringReportWriteMapper.xml
+git commit -m "EPMS-1792 修复无组织排口和有组织排口存储数据互换的问题"
+git add doc/Environment_to_build/keil/
+git commit -m "添加keil安装步骤"
+git checkout dev/server 
+git tag
+git show v1.0
+git commit -m "update keil project"
+git log --graph --decorate --oneline --simplify-by-decoration --all
+git log --all --decorate --oneline --graph
+git checkout dev/arm 
+git commit -m "update"
+git checkout dev/doc 
+start .
+git add doc/JournalArticles/
+git commit -m "添加参考文献"
+cd Documents\notes\
+git diff notes\database\mysql\mysql_installation_archives.
+git diff notes\database\mysql\mysql_installation_archives.md 
+git commit -m "update mysql安装笔记"
+git checkout OS-optimization 
+git pull
+cd /d d:\Documents\driver\
+cd driver\
+git commit -m "更新二稿论文文档"
+git push
+ls
+cd /d d:\software\
+cd 03_cmder\
 git status
 git add -A
