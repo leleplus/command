@@ -138,9 +138,7 @@ git ref log
 git tag -l -n
 git show
 cd ../../../
-cd ../../
 ld
-cd ../
 wexcel sim
 wexcel simcere.xlsx 
 wexcel
@@ -167,7 +165,6 @@ cd ../../../../
 cd "Documents\Logic Solutions\01_projects\qcs-all\
  cd ibm-sds\
 sl
-cd back_end\
 git checkout *.java
 git checkout *.xml
 ipconfig
@@ -182,10 +179,8 @@ whereisarthas
 whereis arthas
 set ARTHAS_HOME
 cd /d %ARTHAS_HOME%/
-cd ~
 cd 
 cd /home
-cd ~/
 cd #
 cd $
 cd %USER_HOME%
@@ -234,7 +229,6 @@ java -jar arthas-boot.jar
 get log
 clean
 clear
-git branch
 git stash 
 git checkout client/simcere-dev 
 cls
@@ -245,7 +239,6 @@ set %M2_HOME%
 cd /d D:\Applocations\46_cmder\cmder\Cmder.exe
 cd /d "D:\Downloads\Compressed\taobao-sdk-java-auto_1479188381469-20200110.jar"
 cd /d "D:\Downloads\Compressed\"
-git staus
 git 
 rmdir /s /q STM32_test\
 del /s /q STM32_test\
@@ -290,9 +283,6 @@ cat id_rsa.pub
 cd /d d:\Documents\
 mkdir driver
 cat ~/.ssh\id_rsa.pub 
-ls -a
-cd ..
-mkdir temp
 cd temp\
 git config user.email "11@qq.com"
 git config --list 
@@ -303,7 +293,6 @@ git commit -m "init readme"
 pwd
 git diff README.md 
 subl
-cat README.md 
 cat ~/.ssh/id_rsa.pub 
 cat ~/.ssh/id_rsa.pub
 set %path%
@@ -315,9 +304,7 @@ git rm --cached *
 rm -r .git\
 rm -rf .git\
 git init
-git config user.name "witt"
 git config user.email "witt"
-git config user.email "fgwang.660@gmail.com"
 git remote add origin git@github.com:leleplus/command.git
 git pull origin master:master
 git push -u origin master
@@ -347,21 +334,15 @@ git log --oneline --graph --decorate --all
 rm -rf AdobeAcrobatReaderDC_2020.006.20034_Green\
 ssh lele@www.leleplus.fun
 cd /d d:\Documents\notes\
-git checkout master 
 mysqld --initialize --user=root --console
 cd ..\front_end\
-cat README.md | grep node
 git config --list
 nginxd stop -a
 nginxd stop -a 
-nginxd start
-node --max_old_space_size=3072 node_modules/@angular/cli/bin/ng serve --open --proxy-config proxy.config.json
-git log
 git add system-server/src/main/resources/com/logic/epms/persistence/write/MonitoringReportWriteMapper.xml
 git commit -m "EPMS-1792 修复无组织排口和有组织排口存储数据互换的问题"
 git add doc/Environment_to_build/keil/
 git commit -m "添加keil安装步骤"
-git checkout dev/server 
 git tag
 git show v1.0
 git commit -m "update keil project"
@@ -369,22 +350,190 @@ git log --graph --decorate --oneline --simplify-by-decoration --all
 git log --all --decorate --oneline --graph
 git checkout dev/arm 
 git commit -m "update"
-git checkout dev/doc 
-start .
-git add doc/JournalArticles/
 git commit -m "添加参考文献"
 cd Documents\notes\
 git diff notes\database\mysql\mysql_installation_archives.
 git diff notes\database\mysql\mysql_installation_archives.md 
 git commit -m "update mysql安装笔记"
-git checkout OS-optimization 
-git pull
 cd /d d:\Documents\driver\
-cd driver\
-git commit -m "更新二稿论文文档"
-git push
-ls
 cd /d d:\software\
+git commit -m "添加cmder快捷方式"
+cd doc\
+rm "~$物联网环境的智能驾校管理系统 （一稿）王富国.docx" 
+git commit -m "删除Word缓存文件"
+start ls
+cd '$RECYCLE.BIN'/
+ls -l
+cd Searches/
+cd ../
+gti add -A 
+git add -A 
+git commit -m "新增流程图visio文件，更新论文二稿文档"
+cd notes\
+git checkout master 
+cd flyway\
+cat flyway-dev.properties 
+subl flyway.properties 
+cat ..\front_end\README.md | grep 123
+cd Documents\work\
+git commit -m "测试"
+git config user.name "witt"
+git config user.email "fgwang.660@gmail.com"
+git add system-server/src/main/java/com/logic/epms/ws/dto/EmergencyBa
+git add system-server/src/main/java/com/logic/epms/ws/dto/EmergencyBasicDTO.java
+git commit -m "EPMS-1799 添加字段大气环境事件风险等级、水环境事件风险等级，修改风险等级为企业环境风险等级"
+git add system-server/src/main/java/com/logic/epms/domain/EmergencyBasic.java
+git commit -m "EPMS-1799 EmergencyBasic类添加属性,去掉get/set方法，统一改为lombok"
+git add system-server/src/main/resources/com/logic/epms/persistence/write/EmergencyBasicWriteMapper.xml
+git add flyway/src/main/resources/db/migration/V20200316102520__add_column.sql
+git commit -m "EPMS-1799 添加sql脚本，修改mapper文件"
+git add ../front_end/src/app/epms/pages/emergency-plan/pages/risk-plan/pages/detail/risk-plan-detail.component.html
+git add ../front_end/src/app/epms/pages/emergency-plan/pages/risk-plan/pages/detail/risk-plan-detail.component.ts
+git commit -m "EPMS-1799 完成前端页面字段的添加和传值"
+git add system-server/src/main/java/com/logic/epms/ws/dto/ProjectDTO.java
+git add system-server/src/main/java/com/logic/epms/domain/Project.java
+git commit -m "EPMS-1796 DTO和pojo类新增属性"
+git add flyway/src/main/resources/db/migration/V20200316125149__add_column.sql
+git commit -m "EPMS-1796 完成字段添加的sql脚本和mapper文件"
+git add flyway/src/main/resources/db/migration/V20200316125149__add_column_and_add_some_code.sql
+git commit -m "EPMS-1796 新增code"
+git add ../front_end/src/app/epms/pages/historical-evolution/pages/detail/historical-evolution-detail.component.html
+git add ../front_end/src/app/epms/pages/historical-evolution/pages/detail/historical-evolution-detail.component.ts
+git commit -m "EPMS-1796 完成建设项目性质的前端页面，同时修复页面‘备注’字段传值不正确，页面不显示的bug"
+git add system-server/src/main/java/com/logic/epms/domain/ProjectEiaApproval.java
+git add system-server/src/main/java/com/logic/epms/ws/dto/ProjectEiaApprovalDTO.java
+git add flyway/src/main/resources/db/migration/V20200316140110__alter_column.sql
+git commit -m "EPMS-1795 DTO和pojo修改字段，添加字段修改sql,修改mapper文件,后端已完成"
+git add ../front_end/src/app/epms/pages/historical-evolution/pages/detail/
+git commit -m "EPMS-1795 完成前端页面显示以及传值"
+git checkout dev/server 
+mkdir temp
+mv driver-manager-system\ temp\
+subl ..\..\driver\.gitignore 
+cd driver\
+ls -a
+cd back_end\temp\
+git add ..\..\.gitignore 
+git add ../driver-manager-system/
+git commit -m "删除java服务器项目"
+cd driver-manager-system\
+cd back_end\
+git add ..\.gitignore 
+git commit -m "update .gitignore"
+git add driver-manager-system\
+git commit -m "Java服务端重构初始化"
+git checkout dev/doc 
+cd d:\Documents\notes\
+git checkout OS-optimization 
+cd /d d:\Documents\driver\driver\
+git add doc/JournalArticles/
+git add .gitignore
+git commit -m ".gitignore文件忽略旧Java项目文件;添加git版本控制相关的参考文献"
+cd
+cd ~
+cd ~/
+cd ../../
+wget https://wangyasai.github.io/Stars-Emmision/
+cd driver\driver\
+git commit -m "修改论文文档文稿"
+git commit --amend -m "修改论文文档二稿"
+git pul
+git add system-server/pom.xml
+git commit -m "EPMS-1806 添加CSV解析的pom"
+git checkout -b EPMS-1806/TEMP-TASK
+git add system-server/src/main/java/com/
+git add system-server/src/main/resources/com/logic/
+git commit -m "EPMS-1806 TASK 需求不明确，未找到解决方案，已写代码暂存"
+ git push --set-upstream origin EPMS-1806/TEMP-TASK
+git stash save "temp"
+git statsh
+git stash
+git checkout *
+git checkout front_end/package.json
+git checkout ../front_end/package.json
+git stash apply stash@{0} 
+git stash drop stash@{1} 
+git stash drop stash@{0} 
+git stash list
+git add system-server/src/main/java/com/logic/system/util/string/SysUtil.java
+git commit -m "EPMS-1818 SysUtil新增CSV解析成Bean的方法"
+git commit -m "EPMS-1818 标准库文件导入导出模板下载"
+git commit --amend
+nginxd start
+git sttaus
+git add system-server/src/main/java/com/logic/
+git add ../front_end/src/app/epms/pages/system-config/pages/
+git commit -m "EPMS-1818 标准库模板导入导出，前后端完成"
+git branch
+git checkout src/app/epms/pages/system-config/pages/management-of-emission/management-of-emission.component.ts
+git add ../front_end/src/app/epms/pages/system-config/pages/management-of-emission/management-of-emission.component.scss
+git commit -m "EPMS-1818 标准库导入按钮样式修复"
+git checkout EPMS-1806/TEMP-TASK 
+rm flyway/src/main/resources/db/migration/V20200317171007__add_table.sql
+git checkout system-server/pom.xml
+git checkout dev
+git branch -d EPMS-1806/TEMP-TASK 
+git branch -D EPMS-1806/TEMP-TASK 
+^Z
+git commit -m "EPMS-1806 添加用户导入风险物质数据库sql脚本"
+git checkout system-server/src/main/java/com/logic/epms/
+rm system-server/src/main/java/com/logic/epms/domainEnterpriseEmergencyRiskSubstanceIntroduction.java
+cd Documents\driver\driver\
+git add doc/images/
+git staus
+git commit -m "add visio 图形"
+git commit -m "更新二稿论文文档"
+git log
+git clean -nf
+git clean -f
+nginxd start 
+git commit -m "EPMS-1806 生成风险物质对象、DTO、Service、ServiceImpl、Mapper等接口"
+rm back_end/system-server/src/main/java/com/logic/epms/domain/EnterpriseEmergencyRiskSubstanceIntroduction.java
+rm back_end/system-server/src/main/resources/com/logic/epms/persistence/read/EnterpriseEmergencyRiskSubstanceIntroductionReadMapper.xml
+git add flyway/src/main/resources/db/migration/V20200317171447__add_table.sql
+git commit -m "EPMS-1806 修改用户导入风险物质记录表的创建sql脚本"
+git rm --cached system-server/src/main/java/com/logic/epms/ws/EmergencyBasicRest.java
+git commit -m "EPMS-1806 重构pojo、DTO、Service、ServiceImpl、Mapper"
+git add system-server/src/main/java/com/logic/epms/ws/dto/EnterpriseEmergencyRiskSubstanceIntroductionDTO.java
+git commit -m "EPMS-1806 完成CSV文件导入，模板下载的后端接口"
+cd Documents\logic\
+cd epms\
+cd back_end\flyway\
+start .
+subl flyway-dev.properties 
+cat README.md 
+mvn -Dflyway.configFile=flyway-dev.properties flyway:migrate -X
+git checkout system-server/src/main/resources/com/logic/epms/persistence/read/EmergencyBasicReadMapper.xml
+git add ../front_end/src/app/epms/pages/emergency-management/pages/sudden-env-emergency-plan/risk-substance/risk-substance.component.html
+git add ../front_end/src/app/epms/pages/emergency-management/pages/sudden-env-emergency-plan/risk-substance/risk-substance.component.scss
+git commit -m "EPMS-1806 完成风险物质导入，模板导出的前端页面样式"
+git add system-server/src/main/java/com/logic/epms/persistence/read/EmergencyBasicReadMapper.java
+git add system-server/src/main/resources/com/logic/epms/persistence/read/EmergencyBasicReadMapper.xml
+git add system-server/src/main/java/com/logic/epms/service/IEmergencyBasicService.java
+git add system-server/src/main/java/com/logic/epms/service/impl/EmergencyBasicService.java
+git add system-server/src/main/java/com/logic/epms/ws/EmergencyBasicRest.java
+git commit -m "EPMS-1806 修改风险物质列表查询接口"
+cat README.md | grep node
+git add ../front_end/src/app/epms/pages/emergency-management/pages/sudden-env-emergency-plan/risk-substance/risk-substance.component.ts
+git commit -m "EPMS-1806 修复获取模板404问题"
+git push
+git pull
+git add system-server/src/main/java/com/logic/epms/
+git add system-server/src/main/resources/com/logic/epms/persistence/
+git add flyway/src/main/resources/db/migration/V20200318162153__add_column.sql
+git commit -m "EPMS-1797 数据库新增字段脚本，添加字段对应的接口"
+node --max_old_space_size=3072 node_modules/@angular/cli/bin/ng serve --open --proxy-config proxy.config.json
+cd ..
+cd EPMS\
+git add back_end/flyway/src/main/resources/db/migration/V20200318162153__add_column_and_add_some_code.sql
+git add front_end/src/app/epms/pages/company-condition/pages/company-sewage/pages/pollution-solid/detail/pollution-solid-detail.component.html
+git add front_end/src/app/epms/pages/historical-evolution/historical-evolution.module.ts
+git add front_end/src/app/epms/pages/historical-evolution/pages/detail/pages/
+git commit -m "EPMS-1797 前端页面验收方式和验收内容添加完成"
+cd software\
 cd 03_cmder\
+ls
+cat config\.history 
+vi config\.history 
 git status
 git add -A
