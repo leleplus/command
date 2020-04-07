@@ -33,7 +33,6 @@ vue add element
 npm install axios qs --save
 mv .gitignore ../
 ls -a ../
-git commit 
 subl ..\.gitignore 
 git commit --amend
 npm rebuild node-sass
@@ -51,7 +50,6 @@ ng g c LawEnforcementUnit
 git add .
 git commit -m "添加单片机，esp8266图片，文档排版，出三搞"
 git commit --amend -m "添加单片机，esp8266图片，文档排版，出三稿"
-cd Learning-cannot-stop\
 rm -r RuoYi-Vue\
 git branch -a
 git checkout remotes/origin/master
@@ -73,7 +71,6 @@ git commit -m "EPMS-1820 新建执法单位组件"
 gti status
 git commit -amend -no--edit
 git commit --amend -no--edit
-git commit --amend --no--edit
 git pyll
 git add src/app/epms/pages/overview/emissions-drain/emissions-drain.component.ts
 git commit -m "EPMS-1940 去除面包屑，废水无筛选框，显示-的bug"
@@ -81,7 +78,6 @@ git add src/app/epms/pages/emergency-plan/pages/heavy-pollution-weather/pages/de
 git commit -m "EPMS-1908 修复重污染天气应急预案，选择免停产时，企业类型不显示的bug"
 git tag
 git show v4.2
-git checkout dev
 ng g c UnitManagement
 cd unit-management\
 ng g c UnitManagementDialog
@@ -92,7 +88,6 @@ commit -m "EPMS-1807 autonumber新增数据，将单位迁移到独立模块"
 git commit -m "EPMS-1807 autonumber新增数据，将单位迁移到独立模块"
 git diff src/app/auth/effects/auth.ts
 git add src/app/auth/effects/auth.ts
-git commit --amend --no-edit
 cd ./.
 cd xsyy\
 cd qcs-all\
@@ -100,7 +95,6 @@ cd ibm-sds\
 start 。
 mvn install
 cd .../../../
-cd ../../../
 cd logic\epms\EPMS\
 git checkout dev-bbkf 
 rm lib\2.json 
@@ -150,21 +144,17 @@ git checkout library-core/pom.xml
 git checkout library-web/pom.xml
 java -jar Desktop\library-web.jar 
 scp Desktop\library-web.jar lele@www.leleplus.fun:~/zjj/
-ssh lele@www.leleplus.fun
 cd Documents\driver
 cd doc\
 git commit -m "三稿，带批注"
 taskkill /f /im explorer.exe
 start explorer.exe
-git checkout dev/server 
-cd Documents\Learning-cannot-stop\
 rm -rf RuoYi-Vue\
 git clone git@gitee.com:y_project/RuoYi-Vue.git
 git add src/main/java/com/leleplus/core
 git commit -m "引入核心模块"
 git commit -m "项目模块初始化"
 git commit -m "完成common模块"
-git log
 gitstatus
 git add src/main/java/com/leleplus/project/system/
 git commit -m "项目模块修复import"
@@ -174,7 +164,6 @@ git commit -m "项目模块调整"
 git diff pom.xml 
 git add pom.xml 
 git commit -m "项目整体依赖调整"
-git status\
 git checkout library-core/src/main/java/com/zjj/core/config/ShiroConfiguration.java
 git diff
 git diff > a.txt
@@ -209,15 +198,11 @@ git commit -m "添加日志文件配置"
  cd RuoYi-Vue\
 powercfg -h on
 powercfg -h off
-cd notes\
 git commit -m "添加搜狗皮肤"
-cd /d Documents\notes\
 git commit -m "添加字体，添加搜狗输入法皮肤"
-git add -A
 git commit -m "添加搜狗输入法皮肤"
 ld
 mkdir front_end
-cd front_end\
 mkdir driver-ui
 git clone https://github.com/PanJiaChen/vue-element-admin.git
 cp ..\..\..\..\Learning-cannot-stop\RuoYi-Vue\ruoyi-ui\ ./
@@ -228,11 +213,8 @@ git add ../../.gitignore
 git commit -m "更新.gitignore文件"
 git add ../../README.md
 git commit -m "更新项目描述文档"
-npm run dev
 git add ./
 git commit -m "ui初始化"
-git config --list
-cd driver-ui\
 rm -rf .idea\
 ls -al
 cat .editorconfig 
@@ -248,7 +230,6 @@ git add src/app/epms/pages/enforcement-management/pages/
 git add src/app/epms/services/universal-interface.service.ts
 git commit -m "EPMS-1996 修复企业概况，所属行业未显示"
 git commit -m "EPMS-1891 全局修改附件名称去除时间戳"
-cat README.md | grep node
 git checkout *.ts
 git checkout *.html
 git add *.ts
@@ -258,12 +239,9 @@ git add src/app/epms/pages/report-center/outlet-amount-comparison/outlet-amount-
 git commit --amend -m "EPMS-1996 修复行业类别未显示"
 sfc /scannow
 ngingd stop -a
-node --max_old_space_size=3072 node_modules/@angular/cli/bin/ng serve --open --proxy-config proxy.config.json
 node --max_old_space_size=3072 node_modules/@angular/cli/bin/ng serve --open --proxy-config proxy.config.json --port 4201
 2
-nginxd start 
 cd logic\xsyy\
-cd qcs-all\ibm-sds\
 git branch 
 git checkout client/nippon-master
 git checkout ../../nginxSettings/nginx.conf
@@ -273,21 +251,14 @@ git checkout  feature/nippon-env
 nvm uninstall 7.2.0
 nvm list 
 nvm uninstall 13.11.0
-git branch
-git checkout master 
 nvm install 7.2.0
 nvm -v
 npm -g install npm
 npm install -g gulp
 npm install -g bower
 npm i node-sass --sass_binary_site=https://npm.taobao.org/mirrors/node-sass/
-nvm clean
-mvn clean
 bower install
 gulp serve
-nginxd stop -a
-nginxd start
-start .
 nvm install 8.11.3
 cd /d D:\__temp_cache__\__node__
 node.exe -v
@@ -302,23 +273,16 @@ npm  i npm@@5.6.0
 npm i -g angular/cli@1.7.4
 angular
 npm install npm@5.6.0 -g
-npm -v
 npm install angular/cli@1.7.4 -g
-git checkout *
 rm front_end/package-lock.json
-ls -a
 rm -rf node_modules\
-cd ..
 npm install -g angular/cli@1.7.4
 npm install -g @angular/cli@1.7.4
 cd front_end_angular5\
 npm i node-sass --sass_binary_site=https://npm.taobao.org/mirrors/node-sass/  
-npm install
 npm run serve
 ng serve --proxy-config proxy.conf.json --open --base-href /V5/
 ping 180.168.71.206
-cd Documents\notes\
-git checkout OS-optimization 
 ng serve --open
 ng serve --proxy-config proxy.conf.json --open
 git statuc
@@ -326,39 +290,305 @@ git add flyway/src/main/resources/db/migration/V20200330143952__create_device_pa
 git add system-server/src/main/java/com/qcs/configuration/domain/DeviceParameters.java
 git add system-server/src/main/java/com/system/ws/dto/DeviceParametersDTO.java
 git add system-server/src/main/java/com/
-git *.xml
-git staus
 git commit -m "QCS-4419 设备参数，接口开发完成"
-git pull
-git add *.xml
-git add system-server/src/main/java/com/qcs/configuration/ws/EquipmentRest.java
 git commit -m "QCS-4419 设备参数管理接口完成"
-git push
 git checkout *.java
-git sttaus
 git checkout *.xml
-cd Documents\
 cd driver
-cd driver\
 git diff back_end/driver-manager-system/src/main/java/com/leleplus/common/utils/spring/SpringUtils.java
-cd front_end\driver-ui\
 nvm current
 nvm use 7.2.0
 nvm use 8.11.3 
 cd Documents\logic\xsyy-nippon\qcs-all\ibm-sds\front_end_angular5\
-ls
 cat ..\README.md | grep ng
 subl ..\README.md 
 ng serve --proxy-config proxy.conf.json
-cd ../../
-nvm list
 nvm install latest 
 \node -v
-node -v
 history | grep 
 history | grep npm install 
 history | grep 'npm install' 
 cat d:\software\03_cmder\config\.history | grep "npm install"
 cd /d  d:\software\03_cmder\
-git status
+git commit -m "normal sync"
+cd /d d:\Documents\driver\driver\front_end\driver-ui\
+nvm use 13.12.0 
+cat ..\..\README.md | front_end
+cat ..\..\README.md | grep front_end
+cat ..\..\README.md | grep npm
+software\29_redis\Redis-x64-3.2.100_2\redis-server.exe 
+software\29_redis\Redis-x64-3.2.100_2\redis-server.exe &
+nohub software\29_redis\Redis-x64-3.2.100_2\redis-server.exe &
+tasklist | grep redis
+tasklist | grep redis-server.exe
+tasklist | grep *.exe
+nohup software\29_redis\Redis-x64-3.2.100_2\redis-server.exe &
+nvm clean
+git checkout src/main/java/com/leleplus/project/common/CaptchaController.java
+cd /d Documents\driver\driver
+git diff *.xml
+git checkout src/main/resources/mybatis/system/SysMenuMapper.xml
+git commit -m "优化代码，解决不能登录的bug"
+git commit -m "构建多方式匹配登录模式"
+git add flyway/src/main/resources/db/migration/V20200330180124__add_column_processunit.sql
+git *.java
+git commit -m "NIPPON-3 添加设施参数的四个字段"
+git commit -m "NIPPON-2 设备参数接口添加单位"
+git stash save "javaserver暂存本地配置"
+mvn celan
+git commit -m "创建学员教练关联实体，创建关联状态枚举类"
+git branch -d QCS-4350
+git branch -d SHXF-16/SHXF-17 XSYY-245
+git branch -d feature/fire-assessment-regulation
+git branch client/simcere-dev
+git branch -d client/simcere-dev
+git branch -d XSYY-387 bugfix/XSYY-334 feature/fire-assessment feature/ibm-sds
+cmd.exe /c ie4uinit.exe -show
+cmd.exe /c ie4uinit.exe -hide
+ie4uinit.exe -hide
+git diff system-server/src/main/java/com/qcs/configuration/ws/EquipmentRest.java
+git add system-server/src/main/java/com/ehs/environment/domain/DeviceParameters.java
+git add system-server/src/main/java/com/qcs/configuration/ws/EquipmentRest.java
+git add system-server/src/main/java/com/ehs/environment/service/impl/DeviceParametersService.java
+git add system-server/src/main/java/com/ehs/environment/ws/dto/DeviceParametersDTO.java
+git add system-server/src/main/java/com/ehs/environment/persistence/read/DeviceParametersReadMapper.java
+git add system-server/src/main/java/com/ehs/environment/persistence/write/DeviceParametersWriteMapper.java
+git add system-server/src/main/java/com/ehs/environment/service/IDeviceParametersService.java
+git commit -m "NIPPON-2 NIPPON-3 移动设备设施参数后端代码存放包位置到ehs下"
+cd front_end\driver-ui\
+git *.xml
+git ststus
+git add system-server/src/main/resources/com/ehs/environment/persistence/read/DeviceParametersReadMapper.xml
+git add system-server/src/main/resources/com/ehs/environment/persistence/write/DeviceParametersWriteMapper.xml
+git commit -m "NIPPON-2 移动设备mapper到ehs包下"
+git add flyway/src/main/resources/db/migration/V20200331154829_create_table.sql
+git add  system-server/src/main/resources/com/ehs/environment/persistence/
+git commit -m "NIPPON-5 完成设施运行参数接口"
+git add system-server/src/main/java/com/ehs/environment/ws/FacilityMonitoringDataRest.java
+git commit --amend --no--edit
+git checkout system-server/src/main/java/com/system/domain/BasePojo.java
+git checkout system-server/src/main/java/com/ehs/environment/domain/KpiScenario.java
+git checkout system-server/src/main/java/com/system/domain/AutoNumber.java
+git commit -m "NIPPON-5 rename sql script"
+cd logic\xsyy-nippon\qcs-all\ibm-sds\
+git checkout back_end/logic-microservices-parent/system-server/src/main/java/com/ehs/environment/domain/KpiInstance.java
+git checkout back_end/logic-microservices-parent/system-server/src/main/java/com/system/domain/TableRelation.java
+git checkout back_end/logic-microservices-parent/system-server/src/main/java/com/quantum/cspc/domain/GeneratorSIC.java
+git checkout back_end/logic-microservices-parent/system-server/src/main/java/com/quantum/cspc/
+git checkout back_end/logic-microservices-parent/system-server/src/main/java/com/ehs/environment/domain/KpiScenarioLog.java
+git checkout back_end/logic-microservices-parent/system-server/src/main/java/com/qcs/
+git diff back_end/logic-microservices-parent/system-server/src/main/java/com/sds/domain/ProductPhysicalHistory.java
+git checkout back_end/logic-microservices-parent/system-server/src/main/java/com/sds/domain/ProductPhysicalHistory.java
+git diff back_end/logic-microservices-parent/system-server/src/main/java/com/ehs/environment/ws/dto/FacilityMonitoringDataDTO.java
+git diff back_end/logic-microservices-parent/system-server/src/main/java/com/ehs/environment/ws/FacilityMonitoringDataRest.java
+git add *.jaba
+git add back_end/logic-microservices-parent/flyway/src/main/resources/db/migration/V20200401151053__create_table.sql
+git add back_end/logic-microservices-parent/system-server/src/main/resources/com/ehs/environment/persistence/
+git commit -m "NIPPON-6 设施管理，监测点接口完成"
+git commit -m "NIPPON-2 NIPPON-3 处理设施检测参数throw execption的message"
+cd front_end\
+cd driver-ui\
+cd /d Documents\notes\
+git checkout notes\
+git commit -m "添加fastjson报错记录"
+git merge OS-optimization 
+git merge --abort
+git commit -m "优化登录逻辑，完成多账户登录，角色检查"
+git diff ../front_end/src/app/epms/components/general-components/data-table/material-data-table.component.ts
+git checkout ../front_end/src/app/epms/components/general-components/data-table/material-data-table.component.ts
+cd ..\front_end\
+git checkout dev
+cat README.md | grep node
+git checkout proxy.config.json
+cd /d Documents\zjj\library_seat\
+git diff temp/src/main/java/com/zjj/dao/expand/RoleExpandMapper.java
+git diff back_end/library-server/library-web/src/main/java/com/zjj/controller/system/SysMenuController.java
+git checkout back_end/library-server/library-web/src/main/java/com/zjj/controller/system/SysMenuController.java
+git config --list
+nginxd start 
+git diff system-server/src/main/java/com/ehs/environment/persistence/read/FacilityMonitoringDataReadMapper.java
+cd /d Documents\driver\driver\
+cd ..\..\logic\xsyy-nippon\
+git diff back_end/logic-microservices-parent/system-server/src/main/java/com/ehs/environment/domain/FacilityMonitoringData.java
+git add *.sql
+git add back_end/logic-microservices-parent/system-server/src/main/resources/com/ehs/
+git commit -m "NIPPON-11 新增发送监测提醒邮件，修改监测参数的责任人为system_user的id"
+rm ../../front_end/npm-debug.log
+git stash save -m "dd"
+git stash 
+git list
+git checkout client/simcere-dev 
+git checkout feature/nippon-env 
+git stash apply stash@{1} 
+git stash apply stash@{0} 
+git diff system-server/src/main/java/com/ehs/environment/service/impl/TaskReminderService.java
+git diff system-server/src/main/java/com/qcs/quartz/jobs/TaskGeneratorService.java
+git checkout system-server/src/main/java/com/qcs/quartz/jobs/TaskGeneratorService.java
+git commit -m "NIPPON-11 创建每日一点自动管理的监测服务提醒邮件"
+git add system-server/src/main/java/com/ehs/environment/ws/EnvAutoManagerRest.java
+git commit -m "NIPPON-11 任务同步接口，去除swagger文档描述信息"
+cd Documents\logic\epms\EPMS\front_end\
+subl proxy.config.json 
+cat README.md | grep node 
+node --max_old_space_size=3072 node_modules/@angular/cli/bin/ng serve --open --proxy-config proxy.config.json
+git add ../back_end/system-server/src/main/java/com/logic/epms/service/impl/ProductionUnitService.java
+git commit -m "解决参数新增保存不上的bug"
+git checkout ../back_end/system-server/src/main/java/com/logic/system/ws/FileRest.java
+cd driver\driver\front_end\driver-ui\
+nppm run dev
+nginxd stop -a
+\software\29_redis\Redis-x64-3.2.100_2\redis-server.exe 
+scp
+scp ./a.jar lele@www.leleplus.fun:~/temp/
+cat ../../front_end/driver-ui/dump.rdb
+git add ../../database/backup/
+git add ../../front_end/driver-ui/public/favicon.ico
+git add ../../front_end/driver-ui/src/assets/logo/
+git stratus
+cd Documents\driver\driver\
+git commit -m
+rm front_end/driver-ui/dump.rdb
+git diff back_end/driver-manager-system/src/main/resources/application-dev.yml
+git diff back_end/driver-manager-system/src/main/resources/i18n/messages.properties
+git commit -m "修改国际化异常提示消息i18n,修改开发数据库连接信息"
+git diff front_end/driver-ui/src/views/system/notice/index.vue
+git commit -m "修改前台按钮大小"
+ls front_end\
+ls 
+cd back_end\
+cd ../front_end/
+rm driver-ui\
+rm driver-ui\ -rf
+ssh root@39.107.110.217
+ping 172.17.7.3
+lele@www.leleplus.fun
+ssh lele@www.leleplus.fun
+nginxd start -a
+ls -R ./ | grep *.log
+ls -R ./ | grep log
+ls log
+ls logs\
+rm -rf logs\
+git add system-server/src/main/resources/com/ehs/environment/persistence/read/FacilityEnhanceReadMapper.xml
+git commit -m "NIPPON-15 设施流程图查询所有设备和排口接口，支持关键字查询"
+node -v
+npm -v
+git add src/main/java/com/leleplus/project/system/service/ISysUserInfoService.java
+git add src/main/java/com/leleplus/project/system/domain/SysPositions.java
+git rm --cached src/main/java/com/leleplus/project/system/service/ISysUserInfoService.java
+git add src/main/java/com/leleplus/common/service/
+git commit -m "抽象顶级父类Service层接口"
+cd Documents\logic\xsyy-nippon\
+cd qcs-all\ibm-sds\
+git add src/main/resources/i18n/messages.properties
+git commit -m 
+git commit
+git add *.java
+git add *.xml
+git commit -m "bug fix"
+git staus
+git sttaus
+npm install --save @/system/user/coach/coach
+npm install  @/system/user/coach/coach
+git checkout front_end/driver-ui/src/views/system/user/index.vue
+ls front_end/driver-ui/src/views/system/user/coach/
+rm front_end/driver-ui/src/views/system/user/coach/
+rm -rf front_end/driver-ui/src/views/system/user/coach/
+git checkout *.js
+git add front_end/driver-ui/src/views/system/user/index.vue
+git add front_end/driver-ui/src/api/system/rfid.js
+git diff front_end/driver-ui/src/main.js
+git checkout front_end/driver-ui/src/main.js
+git diff back_end/driver-manager-system/src/main/java/com/leleplus/project/system/domain/SysUserInfo.java
+git add back_end/driver-manager-system/src/main/java/com/leleplus/project/system/domain/SysUserInfo.java
+git diff back_end/driver-manager-system/src/main/java/com/leleplus/project/system/service/impl/SysUserServiceImpl.java
+git checkout back_end/driver-manager-system/src/main/java/com/leleplus/project/system/service/impl/SysUserServiceImpl.java
+git commit -m "前端用户管理添加rfid卡添加界面"
+mvn clean
+nvm list
+git add ../../front_end/driver-ui/src/layout/components/Sidebar/Logo.vue
+git commit -m "修改logo"
+git stash list
+git stash
+git stash clear
+git checkout dev/doc 
+git reflog
+git tag 
+cd .././
+cd ../
+cd notes\
+git checkout master 
+git tag -a V3.0
+git push origin V3.0
+ls ../../front_end/
+ls ..\..\front_end\driver-ui\
+git commit -m "doc分支更新gitignore,忽略node_models和package-lock.json"
+cd Documents\notes\
+git checkout OS-optimization 
+cd ../../
+git branch
+git checkout dev/server 
+git checkout -b feture/main
+git merge dev/server 
+git merge dev/doc 
+subl .gitignore
+vi .gitignore
+more .gitignore 
+git commit -m "解决冲突"
+git push --set-upstream origin feture/main
+git status\
+git cherry-pick --abort
+cd Documents\
+git commit -m "用户界面分步骤提交，格式化代码index.vue"
+git commit -m "添加用户信息接口"
+git add front_end/driver-ui/src/utils/request.js
+git commit -m "格式化代码"
+git add *.js
+git commit --amend --no-edit
+git commit -m "RFID接口完成"
+git commit -m "新增用户绑定RFID接口(temp)"
+cd Documents\driver\
+cd driver\
+git commit 
+cd ../../../
+cd Documents\Learning-cannot-stop\
+cd RuoYi-Vue\
+start .
+git checkout *
+git checkout ../../back_end/driver-manager-system/src/main/
+git log
+cd driver\driver\back_end\
+cd ../ && git status
+npm install
+npm run dev
+redis-server.exe 
+status
+rm dump.rdb
+git commit -m "update project"
+cd ..
+cd Learning-cannot-stop\
+ls -a
+git clone https://github.com/Mpmart08/MusicPlayer.git
+git config http.postBuffer 524288000
+git config --global http.lowSpeedLimit 0
+git config --global http.lowSpeedTime 999999
+git clone --depth=1 https://github.com/Mpmart08/MusicPlayer.git
 git add -A 
+git rm --cached src/main/java/com/leleplus/project/system/domain/Subject.java
+git commit -m "新增实体,教练车，成绩表刷卡记录"
+cd MusicPlayer\
+git fetch --unshallow
+git push
+cd releases\
+ls
+java -jar MusicPlayer
+java -jar MusicPlayer.jar 
+nginxd start
+git diff system-server/pom.xml
+git pull
+git checkout system-server/pom.xml
+echo Last successful update>ConEmuUpdate.info && date /t>>ConEmuUpdate.info && time /t>>ConEmuUpdate.info
+cd 
+cd software\03_cmder\
+git status
+git add -A
