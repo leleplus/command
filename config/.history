@@ -497,7 +497,6 @@ git stash
 git stash clear
 git checkout dev/doc 
 git reflog
-git tag 
 cd .././
 cd ../
 cd notes\
@@ -637,7 +636,6 @@ git add back_end/logic-microservices-parent/flyway/src/main/resources/db/migrati
 git commit -m "NIPPON-18 废气废水排放量监测数据接口done"
 git remote set-url https://git.logicsolutions.com/quantum/qcs-all.git
 git remote set-url origin https://git.logicsolutions.com/quantum/qcs-all.git
-git push
 git diff back_end/logic-microservices-parent/system-server/src/main/java/com/ehs/environment/ws/MonitoringSolidWasteDataRest.java
 git checkout *
 git remote set-url origin git@git.logicsolutions.com:quantum/qcs-all.git
@@ -659,7 +657,6 @@ svn
 cd ..
 git clone git@gitee.com:wittplus/cmder-dev.git
 start .
-cd software\03_cmder\
 git diff .gitignore
 git diff vendor/clink.lua
 subl local cmder_prompt = "\x1b[1;32;40m{cwd} {git}{hg}{svn} \x1b[1;39;40m{lamb} \x1b[0m"
@@ -676,6 +673,13 @@ cat .gitignore
 more .gitignore
 git log
 rm .gitignore 
-git status
 cat appveyor.yml
+git tag 
+git commit -m "更新官方V1.3.14"
+git push
+git tag -a v3.0
+git push origin master --tags
+clear
+cd software\03_cmder\
+git status
 git add -A
