@@ -57,7 +57,6 @@ ls ../
 cd ro
 cd ruoyi-ui\
 cd /
-cd software\
 mkdir 29_redis
 cd 29
 cd 29_redis\
@@ -189,7 +188,6 @@ git commit -m "修改mapper的namespace"
 git diff src/main/java/com/leleplus/common/utils/poi/ExcelUtil.java
 git add src/main/java/com/leleplus/
 git commit -m "解决系统错误"
-mvn package
 mvn spring-boot:run
 git add *.yml
 git commit -m "配置多环境配置文件"
@@ -237,7 +235,6 @@ git add *.html
 git commit -m "修复行业类别"
 git add src/app/epms/pages/report-center/outlet-amount-comparison/outlet-amount-comparison.component.ts
 git commit --amend -m "EPMS-1996 修复行业类别未显示"
-sfc /scannow
 ngingd stop -a
 node --max_old_space_size=3072 node_modules/@angular/cli/bin/ng serve --open --proxy-config proxy.config.json --port 4201
 2
@@ -370,7 +367,6 @@ git checkout system-server/src/main/java/com/system/domain/BasePojo.java
 git checkout system-server/src/main/java/com/ehs/environment/domain/KpiScenario.java
 git checkout system-server/src/main/java/com/system/domain/AutoNumber.java
 git commit -m "NIPPON-5 rename sql script"
-cd logic\xsyy-nippon\qcs-all\ibm-sds\
 git checkout back_end/logic-microservices-parent/system-server/src/main/java/com/ehs/environment/domain/KpiInstance.java
 git checkout back_end/logic-microservices-parent/system-server/src/main/java/com/system/domain/TableRelation.java
 git checkout back_end/logic-microservices-parent/system-server/src/main/java/com/quantum/cspc/domain/GeneratorSIC.java
@@ -380,7 +376,6 @@ git checkout back_end/logic-microservices-parent/system-server/src/main/java/com
 git diff back_end/logic-microservices-parent/system-server/src/main/java/com/sds/domain/ProductPhysicalHistory.java
 git checkout back_end/logic-microservices-parent/system-server/src/main/java/com/sds/domain/ProductPhysicalHistory.java
 git diff back_end/logic-microservices-parent/system-server/src/main/java/com/ehs/environment/ws/dto/FacilityMonitoringDataDTO.java
-git diff back_end/logic-microservices-parent/system-server/src/main/java/com/ehs/environment/ws/FacilityMonitoringDataRest.java
 git add *.jaba
 git add back_end/logic-microservices-parent/flyway/src/main/resources/db/migration/V20200401151053__create_table.sql
 git add back_end/logic-microservices-parent/system-server/src/main/resources/com/ehs/environment/persistence/
@@ -404,8 +399,6 @@ cd /d Documents\zjj\library_seat\
 git diff temp/src/main/java/com/zjj/dao/expand/RoleExpandMapper.java
 git diff back_end/library-server/library-web/src/main/java/com/zjj/controller/system/SysMenuController.java
 git checkout back_end/library-server/library-web/src/main/java/com/zjj/controller/system/SysMenuController.java
-git config --list
-nginxd start 
 git diff system-server/src/main/java/com/ehs/environment/persistence/read/FacilityMonitoringDataReadMapper.java
 cd /d Documents\driver\driver\
 cd ..\..\logic\xsyy-nippon\
@@ -436,7 +429,6 @@ git commit -m "解决参数新增保存不上的bug"
 git checkout ../back_end/system-server/src/main/java/com/logic/system/ws/FileRest.java
 cd driver\driver\front_end\driver-ui\
 nppm run dev
-nginxd stop -a
 \software\29_redis\Redis-x64-3.2.100_2\redis-server.exe 
 scp
 scp ./a.jar lele@www.leleplus.fun:~/temp/
@@ -462,7 +454,6 @@ rm driver-ui\ -rf
 ssh root@39.107.110.217
 ping 172.17.7.3
 lele@www.leleplus.fun
-ssh lele@www.leleplus.fun
 nginxd start -a
 ls -R ./ | grep *.log
 ls -R ./ | grep log
@@ -478,16 +469,10 @@ git add src/main/java/com/leleplus/project/system/domain/SysPositions.java
 git rm --cached src/main/java/com/leleplus/project/system/service/ISysUserInfoService.java
 git add src/main/java/com/leleplus/common/service/
 git commit -m "抽象顶级父类Service层接口"
-cd Documents\logic\xsyy-nippon\
-cd qcs-all\ibm-sds\
 git add src/main/resources/i18n/messages.properties
 git commit -m 
 git commit
-git add *.java
-git add *.xml
 git commit -m "bug fix"
-git staus
-git sttaus
 npm install --save @/system/user/coach/coach
 npm install  @/system/user/coach/coach
 git checkout front_end/driver-ui/src/views/system/user/index.vue
@@ -504,7 +489,6 @@ git add back_end/driver-manager-system/src/main/java/com/leleplus/project/system
 git diff back_end/driver-manager-system/src/main/java/com/leleplus/project/system/service/impl/SysUserServiceImpl.java
 git checkout back_end/driver-manager-system/src/main/java/com/leleplus/project/system/service/impl/SysUserServiceImpl.java
 git commit -m "前端用户管理添加rfid卡添加界面"
-mvn clean
 nvm list
 git add ../../front_end/driver-ui/src/layout/components/Sidebar/Logo.vue
 git commit -m "修改logo"
@@ -538,7 +522,6 @@ git commit -m "解决冲突"
 git push --set-upstream origin feture/main
 git status\
 git cherry-pick --abort
-cd Documents\
 git commit -m "用户界面分步骤提交，格式化代码index.vue"
 git commit -m "添加用户信息接口"
 git add front_end/driver-ui/src/utils/request.js
@@ -547,16 +530,11 @@ git add *.js
 git commit --amend --no-edit
 git commit -m "RFID接口完成"
 git commit -m "新增用户绑定RFID接口(temp)"
-cd Documents\driver\
-cd driver\
 git commit 
 cd ../../../
 cd Documents\Learning-cannot-stop\
 cd RuoYi-Vue\
-start .
-git checkout *
 git checkout ../../back_end/driver-manager-system/src/main/
-git log
 cd driver\driver\back_end\
 cd ../ && git status
 npm install
@@ -565,7 +543,6 @@ redis-server.exe
 status
 rm dump.rdb
 git commit -m "update project"
-cd ..
 cd Learning-cannot-stop\
 ls -a
 git clone https://github.com/Mpmart08/MusicPlayer.git
@@ -578,17 +555,127 @@ git rm --cached src/main/java/com/leleplus/project/system/domain/Subject.java
 git commit -m "新增实体,教练车，成绩表刷卡记录"
 cd MusicPlayer\
 git fetch --unshallow
-git push
 cd releases\
-ls
 java -jar MusicPlayer
 java -jar MusicPlayer.jar 
-nginxd start
 git diff system-server/pom.xml
-git pull
 git checkout system-server/pom.xml
-echo Last successful update>ConEmuUpdate.info && date /t>>ConEmuUpdate.info && time /t>>ConEmuUpdate.info
 cd 
+git commit -m "update"
+cd
+cd ../..
+git diff ../../.gitignore
+git checkout ../../.gitignore
+cd Documents\logic\xsyy-nippon\
+cd qcs-all\ibm-sds\
+git add back_end/logic-microservices-parent/flyway/src/main/resources/db/migration/V20200407143804__add_some_code.sql
+git add back_end/logic-microservices-parent/system-server/src/main/java/com/system/enums/ErrorMessageEnum.java
+git add back_end/logic-microservices-parent/system-server/src/main/java/com/system/enums/AttachmentLinkTypeEnum.java
+git rm --cached back_end/logic-microservices-parent/system-server/src/main/java/com/ehs/environment/ws/FacilityMonitoringDataRest.java back_end/logic-microservices-parent/system-server/src/main/java/com/ehs/environment/ws/dto/WasteWaterDischargeMonitoringDataDTO.java
+git diff back_end/logic-microservices-parent/system-server/src/main/java/com/ehs/environment/ws/FacilityMonitoringDataRest.java
+git add back_end/logic-microservices-parent/system-server/src/main/java/com/ehs/environment/ws/FacilityMonitoringDataRest.java
+git rm --cached back_end/logic-microservices-parent/system-server/src/main/java/com/ehs/environment/service/IWasteWaterDischargeMonitoringDataService.java
+git commit -m "QCS-4423 废水排放量手工监测，第三方监测，主记录接口"
+sfc /scannow
+git add flyway/src/main/resources/db/migration/V20200407143804__add_some_code.sql
+git commit -m "QCS-4423 排放量主记录表注释修改"
+git commit -m "QCS-4423 重命名脚本文件名"
+git diff system-server/src/main/java/com/ehs/environment/ws/WasteWaterDischargeRest.java
+git add flyway/src/main/resources/db/migration/V20200407143804__add_some_code_and_create_table.sql
+git diff system-server/src/main/java/com/ehs/environment/persistence/read/WasteWaterDischargeMonitoringReadMapper.java
+git add system-server/src/main/java/com/ehs/environment/persistence/read/WasteWaterDischargeMonitoringReadMapper.java
+cd Documents\driver\
+cd driver\
+cd ..\..\logic\xsyy-nippon\qcs-all\ibm-sds\
+git diff back_end/logic-microservices-parent/system-server/src/main/java/com/ehs/environment/persistence/write/WasteWaterDischargeMonitoringWriteMapper.java
+git add back_end/logic-microservices-parent/system-server/src/main/java/com/ehs/environment/persistence/write/WasteWaterDischargeMonitoringWriteMapper.java
+git diff back_end/logic-microservices-parent/system-server/src/main/java/com/ehs/environment/service/IWasteWaterDischargeMonitoringService.java
+git add back_end/logic-microservices-parent/system-server/src/main/java/com/ehs/environment/service/IWasteWaterDischargeMonitoringService.java
+git commit -m "NIPPON-18 废气废水手工监测，第三方监测，主记录接口及sql脚本"
+git staus
+git commit -m "NIPPON-18 修改sql脚本表名错误"
+git commit -m "NIPPON-18 修改mapper表名错误"
+git commit -m "NIPPON-18 废水监测数据Service层接口"
+nginxd start
+cd Documents\logic\xsyy-nippon\qcs-all\ibm-sds\
+git diff back_end/logic-microservices-parent/system-server/src/main/java/com/ehs/environment/ws/dto/FacilityMonitoringPointDTO.java
+git add back_end/logic-microservices-parent/system-server/src/main/java/com/ehs/environment/ws/dto/FacilityMonitoringPointDTO.java
+git diff back_end/logic-microservices-parent/system-server/src/main/java/com/ehs/environment/service/impl/FacilityMonitoringPointService.java
+git add back_end/logic-microservices-parent/system-server/src/main/java/com/ehs/environment/service/impl/FacilityMonitoringPointService.java
+git commit -m "NIPPON-6 修复json数据封装bug"
+git diff back_end/logic-microservices-parent/system-server/src/main/java/com/ehs/environment/service/impl/FacilityMonitoringDataService.java
+git add back_end/logic-microservices-parent/system-server/src/main/java/com/ehs/environment/service/impl/FacilityMonitoringDataService.java
+git commit -m "NIPPON-3 处理新增返回id问题"
+git diff back_end/logic-microservices-parent/flyway/src/main/resources/db/migration/V20200407143804__add_some_code_and_create_table.sql
+git commit -m "NIPPON-18 排放量主记录时间拆分年份和季度，同为integer"
+cd Documents\
+cd logic\xsyy-nippon\qcs-all\ibm-sds\
+git diff back_end/logic-microservices-parent/system-server/src/main/java/com/ehs/environment/service/impl/ExhaustAndWasteWaterMonitoringDataService.java
+ggit status
+git diff back_end/logic-microservices-parent/system-server/src/main/java/com/ehs/environment/ws/WasteWaterDischargeRest.java
+git add back_end/logic-microservices-parent/system-server/src/main/java/com/ehs/environment/ws/WasteWaterDischargeRest.java
+git commit -m "NIPPON-18 废水废气排放量监测主记录接口bug修改"
+git sttaus
+git add back_end/logic-microservices-parent/flyway/src/main/resources/db/migration/V20200407143804__add_some_code_and_create_table.sql
+git diff back_end/logic-microservices-parent/system-server/src/main/java/com/ehs/environment/domain/WasteWaterDischargeMonitoring.java
+git add back_end/logic-microservices-parent/system-server/src/main/java/com/ehs/environment/domain/WasteWaterDischargeMonitoring.java
+git diff back_end/logic-microservices-parent/system-server/src/main/java/com/ehs/environment/ws/dto/WasteWaterDischargeMonitoringDTO.java
+git add back_end/logic-microservices-parent/system-server/src/main/java/com/ehs/environment/ws/dto/WasteWaterDischargeMonitoringDTO.java
+git diff back_end/logic-microservices-parent/system-server/src/main/java/com/ehs/environment/service/impl/WasteWaterDischargeMonitoringService.java
+git add back_end/logic-microservices-parent/system-server/src/main/java/com/ehs/environment/service/impl/WasteWaterDischargeMonitoringService.java
+git diff back_end/logic-microservices-parent/system-server/src/main/resources/com/ehs/environment/persistence/write/WasteWaterDischargeMonitoringWriteMapper.xml
+git add back_end/logic-microservices-parent/system-server/src/main/resources/com/ehs/environment/persistence/write/WasteWaterDischargeMonitoringWriteMapper.xml
+git diff back_end/logic-microservices-parent/system-server/src/main/resources/com/ehs/environment/persistence/read/WasteWaterDischargeMonitoringReadMapper.xml
+git add back_end/logic-microservices-parent/system-server/src/main/resources/com/ehs/environment/persistence/read/WasteWaterDischargeMonitoringReadMapper.xml
+nginxd stop
+nginxd stop -a
+nginxd start 
+git commit -m "NIPPON-18 排放量主记录工厂改为外键id关联"
+git add *.xml
+git add *.java
+git add back_end/logic-microservices-parent/flyway/src/main/resources/db/migration/V20200409113542__create_table.sql
+git commit -m "NIPPON-18 废气废水排放量监测数据接口done"
+git remote set-url https://git.logicsolutions.com/quantum/qcs-all.git
+git remote set-url origin https://git.logicsolutions.com/quantum/qcs-all.git
+git push
+git diff back_end/logic-microservices-parent/system-server/src/main/java/com/ehs/environment/ws/MonitoringSolidWasteDataRest.java
+git checkout *
+git remote set-url origin git@git.logicsolutions.com:quantum/qcs-all.git
+git remote -v
+git pull
+git stash save "排放量监测浓度计算"
+ipconfig
+cd ssmtest\
+ls
+mvn compile
+mvn clean
+mvn package
+cd Desktop\
+scp 03_cmder.zip www.leleplus.fun:~/
+scp 03_cmder.zip lele@www.leleplus.fun:~/
+ssh lele@www.leleplus.fun
+echo Last successful update>ConEmuUpdate.info && date /t>>ConEmuUpdate.info && time /t>>ConEmuUpdate.info
+svn
+cd ..
+git clone git@gitee.com:wittplus/cmder-dev.git
+start .
 cd software\03_cmder\
+git diff .gitignore
+git diff vendor/clink.lua
+subl local cmder_prompt = "\x1b[1;32;40m{cwd} {git}{hg}{svn} \x1b[1;39;40m{lamb} \x1b[0m"
+subl vendor\clink.lua 
+cd software\
+cd 03
+cd 03_cmder\
+git config --list
+start .\
+git diff README.md 
+git checkout README.md 
+cat vendor/cmder.sh
+cat .gitignore
+more .gitignore
+git log
+rm .gitignore 
 git status
+cat appveyor.yml
 git add -A
