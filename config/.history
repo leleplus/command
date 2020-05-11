@@ -56,7 +56,6 @@ mkdir 29_redis
 cd 29
 cd 29_redis\
 wget https://github.com/microsoftarchive/redis/releases/download/win-3.2.100/Redis-x64-3.2.100.zip
-cd /d d
 cd /d d:
 cd /d d:\Documents\Learning-cannot-stop\
 git clone git@gitee.com:y_project/RuoYi.git
@@ -349,7 +348,6 @@ git add back_end/logic-microservices-parent/flyway/src/main/resources/db/migrati
 git add back_end/logic-microservices-parent/system-server/src/main/resources/com/ehs/environment/persistence/
 git commit -m "NIPPON-6 设施管理，监测点接口完成"
 git commit -m "NIPPON-2 NIPPON-3 处理设施检测参数throw execption的message"
-cd driver-ui\
 git checkout notes\
 git commit -m "添加fastjson报错记录"
 git merge OS-optimization 
@@ -555,10 +553,8 @@ git add back_end/logic-microservices-parent/flyway/src/main/resources/db/migrati
 git commit -m "NIPPON-18 废气废水排放量监测数据接口done"
 git remote set-url https://git.logicsolutions.com/quantum/qcs-all.git
 git diff back_end/logic-microservices-parent/system-server/src/main/java/com/ehs/environment/ws/MonitoringSolidWasteDataRest.java
-git remote set-url origin git@git.logicsolutions.com:quantum/qcs-all.git
 git stash save "排放量监测浓度计算"
 cd ssmtest\
-mvn package
 scp 03_cmder.zip www.leleplus.fun:~/
 scp 03_cmder.zip lele@www.leleplus.fun:~/
 echo Last successful update>ConEmuUpdate.info && date /t>>ConEmuUpdate.info && time /t>>ConEmuUpdate.info
@@ -570,7 +566,6 @@ subl local cmder_prompt = "\x1b[1;32;40m{cwd} {git}{hg}{svn} \x1b[1;39;40m{lamb}
 subl vendor\clink.lua 
 cd software\
 cd 03
-cd 03_cmder\
 git config --list
 start .\
 git diff README.md 
@@ -672,7 +667,6 @@ tasklist | grep node.exe
 taskkill /f /im node.exe
 nvm uninstall 13.12.0 
 nvm install latest 
-nvm use 13.12.0 
 npm -v
 npm
 rm -r D:\__temp_cache__\__npm_models__\node_modules\
@@ -687,7 +681,6 @@ scp dist.zip lele@www.leleplus.fun:~/
 npm run build
 git checkout vue.config.js
 git diff package.json
-rm -rf dist\
 nginx stop -a
 nginx -t
 nginx start
@@ -798,7 +791,6 @@ git commit -m "解决后端接口bug"
 git commit -m "论文文档完成(定稿)"
 git add stm32_client\debug_software\
 git commit -m "开发调试工具"
-cd driver-manager-system\
 mvn spring-boot:run
 cd src\
 cd views\system\
@@ -825,7 +817,6 @@ cd Documents\zjj`
 cd Documents\zjj\
 cd library_seat\
 git commit -m "更新sql脚本"
-cd /d d:\Documents\driver\
 cd ..\..\zjj\library_seat\
 git add *.sql
 git commit -m "数据库更新"
@@ -835,12 +826,9 @@ git add doc\
 git commit -m "答辩ppt"
 redis-server.exe 
 npm run dev
-npm run build:prod
 ssh 47.103.215.243
-mvn clean package
 scp target\driver-server-V3.0.0.jar lele@47.103.215.243:~/driver
 scp dist.zip  lele@47.103.215.243:~/driver
-cd driver\
 git commit
 ipconfig
 ssh lele@47.103.215.243
@@ -853,11 +841,9 @@ git reset --hard 69bdcd3495f59f93f757c3da5f708f1d11f8441a
 git reset HEAD~  
 git reset HEAD~
 cd /d d:\Documents\logic\
-git remote -v
 rm epms
 rm -rf epms
 git clone http://gitlab.logicsolutions.com.cn/alice.li/EPMS.git
-cd ..
 cd xsyy-nippon\
 rm back_end/logic-microservices-parent/flyway/flyway-demo-nippon.properties
 git reset HEAD~ 
@@ -872,7 +858,6 @@ cd ..\..\..\notes\
 cmder
 cd /d D:\Documents\logic\xsyy-nippon\qcs-all\ibm-sds\
 cd ../
-cd notes\
 git commit -m "新增入坑记录"
 git add -A
 git commit -m "Windows的linux子系统安装教程"
@@ -897,7 +882,6 @@ git commit -m "NIPPON-2 解决设备参数删除错误"
 git checkout task/NIPPON-13/temp 
 git commit -m "
 git commit -m "NIPPON-13 废气废水第三方监测数据完成"
-git commit --amend --no-edit
 git merge task/NIPPON-13/temp 
 git checkout system-server/src/main/resources/application-dev.yml
 git checkout system-server/src/main/resources/application.properties
@@ -915,7 +899,6 @@ base
 https://aka.ms/wslstore
 git stash list 
 git stash save "NIPPON-13 调试"
-ssh lele@www.leleplus.fun
 git add *xml
 git commit -m "统计空勤。地勤，职灾件数及损失天数接口"
 nvm install 10.16.0
@@ -946,7 +929,6 @@ git stash save "NIPPON-13"
 \git status
 git commit -m "更新Windows下Linux子系统使用文档"
 rm system-server/src/main/java/com/qcs/incident/domain/dashboard/IncidentDashboardOccupationDays.java
-git branch 
 git stash save "day"
 git checkout v13_standard/feature/dashboard_occupation_occurrence
 git checkout v13_standard/feature/incident-dashboard-occupation-lost
@@ -957,7 +939,6 @@ git commit -m "職災件數，天數修改"
 git push --set-upstream origin v13_standard/feature/incident-dashboard-occupation-lost-api
 git commit -m "損失日數統計，查詢接口"
 git ush
-git checkout .
 git checkout v13_standard/feature/
 git checkout *v13_standard/feature/dashboard_occupation_days
 git checkout v13_standard/feature/dashboard_occupation_days
@@ -968,14 +949,12 @@ git checkout v13_standard/feature/dashboard_occupation_days
 git branch -d task/NIPPON-13/temp
 git stash list
 git stash apply stash@{1} 
-cd back_end\
 cd logic-microservices-parent\
 cd flyway\
 cd fl
 mvn -Dflyway.configFile=flyway-dev.properties flyway:migrate -X
 git commit -m "NIPPON-13 第三方监测计算完成"
 git commit -m "NIPPON-13 bugfix"
-cd driver\driver\
 git commit -m "删除他人文档"
 git commit -m "修改ppt文档中的错误，删除不必要文件"
 git commit -m "NIPPON-13 5.1废气废水排放量聚合查询接口完成"
@@ -986,20 +965,15 @@ rm -rf ./
 git staus
 cd Documents\logic\xsyy-nippon\qcs-all\
 startup.bat 
-nvm list
-nvm use 7.2.0 
 npm install -g gulp@3.8.10 bower
 gulp -version
 brower --version
 npm uninstall bower
-more package.json 
 npm install -g gulp@3.8.0
 npm install -g bower
 np0m install
 gulp
 npm install -g gulp
-cd /d d:\Documents\logic\xsyy-nippon\qcs-all\ibm-sds\front_end\
-node -v
 npm install gulp
 npm install gulp -g
 npm install --save-dev gulp
@@ -1011,15 +985,12 @@ bower --version
 gulp --version
 npm install
 git log --follow -p src\main\java\com\cspc\soap\service\impl\CSPCDeptmentService.java
-cd /d d:\Documents\driver\driver\
 git commit -m "答辩记录表完成"
 cd d:\Documents\driver\driver\
 cd Documents\driver\driver\
 git commit -m "《答辩记录表填写完成》"
 git commit -m --no-verify "《答辩记录表填写完成》"
 git commit --no-verify -m "《答辩记录表填写完成》"
-cd /d d:\Documents\notes\
-git checkout master 
 bash && cd
 bash && cd ~
 bash
@@ -1030,44 +1001,32 @@ set path | grep java
 set path | find s
 set path | find /s s
 cd Documents\notes\
-git checkout OS-optimization 
 ls src/main/java/com/cspc/soap/dom/
 git commit -m "QCS-4418 解析XML 同步用户"
 cd d:\Documents\logic\xsyy-nippon\qcs-all\ibm-sds\
-nginxd start
 git checkout -b bug/temp/QCS-4418
 git diff src/main/resources/log4j.properties
-git checkout src/main/resources/log4j.properties
 git commit -m "QCS-4418 bug调试代码暂存"
 git add*.java
 git commit -m "QCS-4418 添加XML解析用户部门数据代码"
 git pull && git push
-nginxd stop -a
 cd Documents\logic\xsyy-nippon\qcs-all\ibm-sds\
 exitr
-net stop mssqlserver
-net start mssqlserver
 git add *.java
 git commit -m "QCS-4418 组织架构，用户同步逻辑修改，解决同步数据问题"
 git checkout *
 rm package-lock.json 
 git branch -d bug/temp/QCS-4418
 git branch -D bug/temp/QCS-4418
-git checkout feature/nippon-env
-git checkout client/cspc 
 cd ../../
 cd ibm-sds\
 ls back_end/logic-microservices-parent/
 rm -rf back_end/logic-microservices-parent/
-mvn clean
 git diff src/app/safety/inspection-record/inspection-record.html
 git checkout *.html
-git add *.xml
 git add ../back_end/src/main/resources/com/qcs/inspection/persistence/read/InspectionAuditReadMapper.xml
 git commit -m "QCS-4355 解决检查记录列表SQL报错，查询匹配不到数据等"
-git push
 gitstatus
-exit
 rm -rf D:\__temp_cache__\__npm_models__\vue
 rm -rf D:\__temp_cache__\__npm_models__\node_modules\@vue
 ls D:\__temp_cache__\__npm_models__\node_modules\
@@ -1082,35 +1041,166 @@ ls D:\__temp_cache__\__npm_models__\
 npm install -g @vue/cli
 echo hello world!
 echo "hello world!"
-cd /d d:\Documents\
 cd maven_plugins\
-cd restfull-generator\
 rm -rf *
 java
 \clear
 git init 
 cd ..\..\logic\xsyy-nippon\qcs-all\ibm-sds\
-git branch
 cd ..\..\..\..\maven_plugins\restfull-generator\
 git checkout -b feature/try
-start .
 git rm --cached *
 cd /d d:\Documents\maven_plugins\restfull-generator\
 git add pom.xml 
 git add *
 git add ./
 git add ../.gitignore
-git log
 git commit -m "日志集成"
-git commit 
-git pull
+cd ..\..\..\..\..\..\software\03_cmder\
+git commit -m "update normal"
+subl config/.history
+git checkout src/main/resources/log4j.properties
+git add *.xml
+git commit -m "QCS-4473 sql优化"
+git checkout client/cspc
+git add ../front_end/src/app/common/services/inspection-service.js
+git commit -m "QCS-4355 修复根据task NO搜索筛选检查揭露"
+git commit --amend -m "QCS-4355 修复根据task NO搜索筛选检查记录"
+rm src/main/resources/com/system/persistence/read/TaskReferenceReadMapper.xml.rej
+git branch -D bug/QCS-4473
+git checkout -b bug/QCS-4473
 git sttaus
+git commit -m "QCS-4473 删除不需要查询的列字段，使用列名替代 *"
+git stattus
+git commit -m "QCS-4473 SQL去除多余的列"
+git checkout .
+jmeter.bat 
+jmeter
+cd /d d:\Documents\notes\
+git commit -m "新增鼠标指针"
+nginxd start
+rm ../front_end/jmeter.log
+git branch 
+git checkout bug/QCS-4473
+netstat -aon|findstr "7907"
+netstat -aon | findstr 7907
+git checkout src/main/resources/global.properties
+git commit -m "QCS-4473 编写多线程解决查询缓慢"
+ git push --set-upstream origin bug/QCS-4473
+taskkill /f /im explorer.exe && start explorer.exe
+git commit -m "bug/QCS-4473 多任务查询task 暂存"
+git checkout -b new-TASK/QCS-4473
+git add src/main/java/com/system/persistence/read/TaskReferenceReadMapper.java
+git add status
+git add src/main/resources/com/system/persistence/read/TaskReferenceReadMapper.xml
+git add src/main/java/com/system/ws/TaskRest.java
+git add src/main/java/com/system/service/ITaskReferenceService.java
+git commit -m "QCS-4473 新增接口 查询TASKS"
+git push --set-upstream origin new-TASK/QCS-4473
+cd /d d:\Documents\driver\
+cd driver\
+cd back_end\
+cd driver-manager-system\
+cd ..\..\front_end\
+cd driver-ui\
+rm -rf dist\
+more package.json 
+nvm list
+nvm use 13.12.0 
+npm run build:prod
+nvm use 7.2.0 
+cd ..\..\..\..\logic\xsyy-nippon\qcs-all\ibm-sds\front_end\
+git add src/main/java/com/system/service/impl/TaskReferenceService.java
+git add src/main/java/com/system/ws/dto/TaskReferenceDTO.java
+git add ../front_end/src/app/common/services/task-queue-service.js
+git add ../front_end/src/app/safety/task-queue/task-queue-controller.js
+git commit -m "QCS-4473 TaskReference pojo to dto 字段未赋值，前端TASK查询新借口对接"
+git commit --amend -m "QCS-4473 TaskReference pojo to dto 字段未赋值，前端TASK查询新接口对接"
+git remote set-url origin git@git.logicsolutions.com:quantum/qcs-all.git
+git remote -v
+cd /d d:\Documents\driver\driver\doc\publish\server\
+java -jar -Dspring.profiles.active=prd server/driver-server-V3.0.0.jar
+ssh lele@www.leleplus.fun
+net stop sqlserve
+net stop sqlserver
+NET CONTINUE MSSQLSERVER
+net stop mssqlserver
+NET stop mssqlserver
+net start mssqlserver
+gulp serve 
+git commit -m "完成设计操作说明以及文件汇总等"
+git commit  --no-verify  -m "完成设计操作说明以及文件汇总等"
+git lfs install
+git commit -m "更新操作说明文档"
+git commit  --no-verify  -m "更新操作说明文档"
+cd /d d
+git commit -m "压缩操作说明文档图片"
+git commit --no-verify -m "压缩操作说明文档图片"
+git commit -m "论文大纲文档顺序调整，目录更新"
+git commit add --no-verify -m "论文大纲文档顺序调整，目录更新"
+git commit --no-verify -m "论文大纲文档顺序调整，目录更新"
+git commit -m "论文文档更新，封面更新"
+git commit --no-verify -m "论文文档更新，封面更新"
+netstat -ano|findstr 1099
+ taskkill /pid 1388 /f
+cd /d d:\Documents\logic\xsyy-nippon\qcs-all\ibm-sds\front_end\
+git reset --soft 276208174f6a
+git pull\
+git commit -m "解决100MB 文件问题"
+git commit  --no-verify -m "解决100MB 文件问题"
+git reset --soft d864e1861aa6
+git commit --no-verify
+git log
+cd ..
+cd notes\
+git checkout master 
+git commit -m "git超过100MB排坑记录"
+git checkout OS-optimization 
+cd driver\driver\
+cd /d d:\Documents\driverdr
+cd /d d:\Documents\driver\driver\
+git commit -m "更新指导记录表文档"
+git commit --no-verify -m "更新指导记录表文档"
+mvn package
+start .
+cd /d d:\Desktop\
+ls
+java -jar library-web.jar 
+nginxd stop -a
+mvn cleanpackage
+mvn clean package
+cd /d d:\Documents\maven_plugins\
+cd restfull-generator\
+git commit 
+git commit --amend --no-edit
+ping http://i2k.logicsolutions.com/
+ping i2k.logicsolutions.com
+exit
 nginxd start 
+clear
 cd /d d:\Documents\logic\xsyy-nippon\qcs-all\ibm-sds\
 cd front_end\
-ls
+node -v
+git diff src/main/java/com/system/util/QueryUtil.java
+git diff src/main/java/com/qcs/configuration/ws/dto/ContactDTO.java
+git checkout src/main/java/com/qcs/configuration/ws/dto/ContactDTO.java
+git diff src/main/java/com/qcs/configuration/ws/FacilityContactRest.java
+git checkout src/main/java/com/qcs/configuration/ws/FacilityContactRest.java
+git checkout -b bug/queryUtil-fix-in
+git add.
+git commit -m "修复前端queryUtil使用in时，传空值，导致的SQL  in()错误"
+git push
+git push --set-upstream origin bug/queryUtil-fix-in
+git branch
+git checkout feature/nippon-env
+git checkout client/cspc 
+git pull
+ls ../back_end/logic-microservices-parent/
+rm -rf ../back_end/logic-microservices-parent/
+mvn clean
 gulp serve
-cd ..\..\..\..\..\..\software\03_cmder\
+cd /d d:\Documents\
+cd /d d:\software\
+cd 03_cmder\
 git status
-clear
 git add .
