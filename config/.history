@@ -131,65 +131,496 @@ scp Desktop\library-web.jar lele@www.leleplus.fun:~/zjj/
 cd Documents\driver
 cd doc\
 git commit -m "三稿，带批注"
-start explorer.exe
 rm -rf RuoYi-Vue\
 git clone git@gitee.com:y_project/RuoYi-Vue.git
 git add src/main/java/com/leleplus/core
-git add *.xml
 git add *.jar
 git commit -m "登录 JSTL"
-git add *.ts
 git commit -m "EPMS-1225 处理报表页报错以及修复部分图表的无数据样式"
 git commit -m "EPMS-1225 审核者总览启用无数据样式"
 node --max_old_space_size=3072 node_modules/@angular/cli/bin/ng serve --proxy-config proxy.config.json --port=9999
-node --max_old_space_size=3072 node_modules/@angular/cli/bin/ng serve --open --proxy-config proxy.config.json
 git removte -v
 git remote -v
 mkdir temp____emps
 cd temp____emps\
 git clone http://gitlab.logicsolutions.com.cn/alice.li/EPMS.git
-ls
 cd EPMS\
-cd front_end\
-git branch
 git checkout  EPMS-1225
 cat package.json  | grep node 
 nginxd stoop -a
-nginxd stop -a
 nmginxd start 
-nginxd start 
 git commit -m "EPMS-1225  管理员端无数据样式"
-ssh lele@www.leleplus.fun
-exit
-git checkout .
 rm flyway/src/main/resources/db/migration/V20200609170800__add_index.sql
 qqqqq
-cat package.json | grep node 
-git add *.html
-git add *.scss
 git commit -m "EPMS-1225 管理员执法情况统计，无数据样式"
-clear
-git checkout dev
-git add *.yml
 git checkout system-server/src/main/resources/application.properties
 git commit -m "更新yml文件"
-git push
 ^Z
 netstart -aon | findstr "4664"
 netstat -aon | findstr "4664"
 netstat -aon|findstr "4664"
 netstat -aon|findstr "1099"
 taskkill /f -pid 12520
-git add *.java
-git add *.jsp
-git add *.js
 git commit -m "登录 登出 失败错误 自动登录 记住密码功能完成"
-git pull
 git checkout EPMS-1225 
 git pull 
-cat package.json | grep node
-node --max_old_space_size=3072 node_modules/@angular/cli/bin/ng serve --proxy-config proxy.config.json
 cd /d d:\software\03_cmder\
+git commit -m "update history"
+git add *.scs
+git commit -m "报表中心帮助图标样式修复"
+]git push
+git branch 
+git stash drop stash@{0} 
+git stash save "back_end_local_config"
+cd /d D:\Documents\logic\epms\EPMS\front_end 
+cd cd ..\back_end\flyway\
+cd ..\back_end\flyway\
+mysql -uroot -p
+mvn -Dflyway.configFile=flyway-dev.properties flyway:migrate -X
+git sttaus
+git statyus
+git commit -m "注册功能"
+git config user.name "fuguo.wang"
+git config user.email "fuguo.wang@logicsolutions.com.cn"
+git config --list
+git config user.name
+git config user.email
+git loh
+git commit -m "NIPPON-13 排放量计算"
+git add ..\back_end\system-server\src\main\java\
+git reset head ../back_end/system-server/src/main/resources/application-dev.yml
+git commit -m "EPMS-1669 清洁生产历史审批结束"
+cd /d d:\
+rm -rf temp____emps\
+git add ../back_end/system-server/src/main/java/com/logic/epms/hisservice/ICURDService.java
+git commit --amend --no-edit
+git commit -m "删除单条数据"
+git commit -m "用户详情查看页面"
+tasklist | find "11916"
+tasklist | find "14648"
+taskkill /f /t /pid 14648
+netstat -ano | find "4664"
+taskkill /f /t /pid 2184
+taskkill /f /t /pid 11916
+node 
+git add ../back_end/system-server/src/main/java/com/logic/system/
+git commit -m "EPMS-1669 风险应急预案历史审核 done"
+git commit -m "用户信息查看  编辑等"
+git commit -m "住户列表页"
+git commit -m "删除和新增查看页面"
+git commit -m "住户新增后台 编辑查看页面完成"
+netstart -ano | find "1099"
+netstat -ano | find "1099"
+tasklist | find "11824"
+tasklist | grep "11824"
+tasklist | grep 11824
+ps -9 11824
+kill -9 11824
+ps
+ps -ef | grep 1099
+taskkill /f /im /t 11824
+taskkill /f  /t 11824
+taskkill /? 11824
+taskkill /?
+taskkill /f /pid /t 11824
+taskkill /f /t /pid 11824
+git add *.jsvs
+git commit -m "住户完成"
+git commit -m "小区单元结束"
+git commit -m "页面都懂修复"
+git commit -m --amed "页面抖动修复"
+git commit --amed  -m "页面抖动修复"
+git commit --amed "页面抖动修复"
+clean
 git log
+git commit --amed
+git commit --amend -m "页面抖动修复"
+git add *.css
+git add *.js *.jsp
+git add src/main/resources/system-config.properties
+git commit -m "忘记密码"
+git commit -m "修改密码成功"
+cd /d D:\Documents\
+cd idea_workspace\
+ls WebContent/
+cd /d d:\Documents\idea_workspace\stroner\
+git add *.java *.jar
+git add WebContent/WEB-INF/web.xml
+git staus
+git add .settings/
+git add .*
+ls bin\
+ls WebContent/META-INF/
+git commit -m "适配到eclipse"
+git commit -m "eclipse 部署成功"
+git commit -m "update sql script"
+cd /d d:\Documents\idea_workspace\
+cd stroner\
+cd WebContent\
+rm a.jsp 
+git commit -m "删除无用文件"
+ssh www.leleplus.fun
+git diff src/main/java/com/beautiful/common/BaseResponse.java
+git checkout src/main/java/com/beautiful/common/BaseResponse.java
+git checkout *.java
+mysql -hwww.elelplus.fun -uroot -p 
+mysql -hwww.leleplus.fun -uroot -p 
+scp Desktop\stroner.war lele@www.leleplus.fun:~/
+git commit -m "基本修改"
+git commit -m "项目结构适配eclipse"
+git commit -m "更新readme文档说明"
+git rm --cached WebContent\WEB-INF\classes
+git commit -m "更新忽略文件规则"
+git commit -m "抽象service接口  dao接口  异常父类"
+git commit -m "严格区分三层架构"
+git add src/main/java/com/app/web/servlets/UserServlets.java
+git commit -m "三层架构规范化"
+git add 
+git add  src/main/java/com/app/common/ResponseResultType.java
+git add WebContent\
+git stattus
+git add enterprise-manager.iml
+git commit -m "封装响应结果对象  创建message 页面"
+git add src/main/java/com/app/common/ResponseResult.java
+git commit -m "响应结果调整"
+git commit -m "编码  登录过滤，消息页面"
+git add src/main/java/com/app/utils/UtilTools.java
+git commit -m "用户service  dao  登录注册"
+node --max_old_space_size=3072 node_modules/@angular/cli/bin/ng serve  --proxy-config proxy.config.json
+cd d/ d:\Documents\driver\
+cd d/ d:Documents\
+cd d/ d:\Documents\
+d:
+cd Documents\
+cd driver\
+git commit -m "final "
+git add ../back_end/system-server/src/main/java/com/logic/epms/hisservice/
+git add ../back_end/system-server/src/main/java/com/logic/epms/ws/dto/
+git add ../back_end/system-server/src/main/java/com/logic/epms/ws/
+git commit -m "EPMS-1669 重污染天气应急预案 done"
+git commit -m "列表页 设置页 登录页 注册页  首页"
+netstat 
+netstat clear
+netstat | grep
+netstat | grep 8099
+netstat | findstr 8099
+tasklist | grep 7104
+taskkill /f /t /pid 7104
+tasklist | grep 10520
+taskkill /f /t /pid 10520
+git commit -m "EPMS-1669 应急演练  done"
+git git push
+ git push
+git stash save "本地配置"
+git stash list
+git stash drop stash@{0}
+tasklist | grep 5996
+taskkill /f /t /pid 5996
+git add ../back_end/system-server/src/main/java/com/logic/system/service/impl/FileService.java
+git commit -m "EPMS-1669 解决空指针"
+ng g m kt-administrative-penalty-history
+ng g c kt-administrative-penalty-history
+  rm -rf kt-administrative-penalty-history/
+git checkout src/app/epms/pages/administrative-penalty/pages/penalty-info/pages/list/
+ng c kt-penalty-info-history
+ng g c kt-penalty-info
+ng g c kt-penalty-info-history
+rm -rf kt-penalty-info
+rm -rf kt-penalty-info-history\
+ng -g c history
+ng g c history
+rm -rf history\
+rm -rf penalty-history/
+git checkout ../../dynamic-information/pages/monitor-data/pages/online-device/pages/online-device-history.component.html
+git checkout ../administrative-penalty*
+git checkout penalty-info*
+git checkout ../../dynamic-information/pages/monitor-data/pages/online-device/online-device.component.html
+cd ../../../../../../
+git checkout *.html
+git checkout *.ts
+ng g c penalty-history
+git commit -m "完成所有页面"
+taskkill /f /t /pid 4672
+netstat -ano | findstr "1099"
+netstat -ano | grep 8099
+netstat -ano
+netsh winsock reset 
+git commit -m "消息页面优化 用户登录优化"
+git rm --cached WebContent\WEB-INF\classes\
+git rm --cached WebContent\WEB-INF\classes\*
+ngind start 
+git commit -m "EPMS-1669 行政处罚隐藏"
+git commit -m "修改数据类型映射"
+netstat | grep 1099
+taskkill /f /t /pid 9000
+git commit -m "登录  登出 重置密码  用户列表"
+git commit -m "页面交互"
+git add ../*.java
+git commit -m "EPMS-1669 历史沿革  基本信息 和 立项时段"
+git commit -m "完成所有的接口"
+ node --max_old_space_size=3072 node_modules/@angular/cli/bin/ng serve --proxy-config proxy.config.json
+git add ../back_end/system-server/src/main/java/com/logic/*.java
+git commit -m "EPMS-1669 历史沿革环评时段"
+git add ../back_end/system-server/src/main/java/com/logic/epms/
+git commit -m "EPMS-1669 历史沿革  监理时段完成"
+git add ../back_end/system-server/src/main/java/com/logic/epms/*.java
+git commit -m "EPMS-1669 历史沿革审核通过历史"
+netstat -ano | grep 1099
+taskkill /f /t /pid 3492
+git commit -m "所有功能完成"
+git commit -m "更新sql脚本"
+git commit -m "项目描述文档"
+mysql -hwww.leleplus.fun -ulele
+mysql -hwww.leleplus.fun -ulele -p
+scp Desktop\entermgr.war lele@www.leleplus.fun:~
+git commit -m "更新文档  部署完成"
+cd d:\Documents\idea_workspace\enterprise-manager\
+git add *.jsp
+git commit -m "修复用户设置界面  弹窗不显示的bug"
+git checkout .idea/artifacts/
+cd ..\stroner\
+cd /d d:\Pictures\
+mkdir cutl
+cd cutl\
+curl -O http://aliimg.changba.com/cache/photo/[260929610-260939610]_640_640.jpg
+curl  http://aliimg.changba.com/cache/photo/[260929610-260939610]_640_640.jpg
+curl -v  http://aliimg.changba.com/cache/photo/[260929610-260939610]_640_640.jpg
+curl -v  http://aliimg.changba.com/cache/photo/[260929610-260939610]_640_640.jpg | grep 200
+cd ../
+rm -rf cutl\
+taskkill /f /im ecplorer.exe && start explorer.exe
+taskkill /f /im explorer.exe && start explorer.exe
+sc delete Mydock
+cat package.json | grep node 
+git checkout ../front_end/proxy.config.json
+nginxd start
+git add *.sql
+git commit -m "修复SQL脚本错误"
+git checkout EPMS-1669
+mvn package
+git commit -m "EPMS-1669 环保信息其他判断接口"
+git statusa
+git commit -m "EPMS-1669 环保信息其它判断"
+git checkout EPMS-1225
+git stash apply stash@{0} 
+git add ../back_end/system-server/src/main/resources/application-dev.yml
+node --max_old_space_size=3072 node_modules/@angular/cli/bin/ng serve --proxy-config proxy.config.json
+git add *.scss
+git commit -m "EPMS-1225 管理员端无数据样式"
+git ststus
+git checkout WebContent/main.jsp
+ - Database navigator:
+                - Connection type highlighting was redesigned
+                - Simple view support was improved
+                - "Force object refresh on editor open" action was fixed
+                - Main toolbar UIX was improved (no disabled selectors)
+                - Database tools context menu was fixed
+            - Table statistics:
+                - Rendering problems (redraw on scrolling) were fixed
+                - Performance problems were fixed
+                - SQL Server support was added
+            - Data viewer:
+                - Wrong value extraction was fixed for expression aliases which conflict with table column names
+                - Dictionary values separator configuration was added
+                - Row coloring: support of gradient coloring for read-only columns was added
+                - Data formatter:
+                    - Action "reset to default" was fixed in preferences
+                    - Preference changes are immediately applied to open data editors
+            - SQL editor:
+                - Results tab rename was fixed (now we save tab title between results refresh)
+                - Parser of multiple SQL queries on a single line was fixed
+                - Execution plan explain operation cancel was implemented
+                - Coloring of numbers in scientific notation was fixed
+                - Paste from source code: \n and \r characters handle was fixed (now we use proper line feeds)
+                - Stored procedures call generation was fixed
+            - Object editor: "reject changes" and command undo/redo command were fixed
+            - Data import: open target table on finish
+            - Data migration: DDL generation was improved (apply the same column data type when source and target databases use the same driver)
+            - Database tasks: PostgreSQL, MySQL and Oracle tools now can be saved as tasks
+            - SSH configurator: UI controls layout was fixed
+            - Database driver edit dialog was fixed (legacy driver option is disabled by default)
+            - MySQL:
+                - User permission management was fixed (FLUSH PRIVILEGES is not needed for newer server versions)
+                - Unsigned INT and BIGINT data types support was added
+            - Oracle:
+                - Numeric data type modifiers (scale/precision) rendering was fixed
+                - Materialized views read/create and delete was fixed (mviews were removed from table list)
+            - PostgreSQL:
+                - Vacuum tool was improved (run in auto-commit mode)
+                - List of reserved keywords was updated
+            - Redshift: View with no schema binding support was added
+            - SQL Server: timestamp columns were marked as auto-generated
+git checkout dev
+git rbanch
+git checkout client/cspc
+git brwanch
+git checkout 
+git checkout feature/nippon-env
+git upll
+taskkill /f /im explorer.exe
+start explorer.exe
+cls
+vi
+mysql -h129.211.2.189 -uroot -p
+ssh root@129.211.2.189 -p 5827 "scp -P 43005 root@180.168.71.206:/opt/tomcat/webapps/webroot/WEB-INF/reportlets/nippon/NP0037.cpt ./
+git checkout client/nippon 
+nvm list
+rm -rf /d/__temp_cache__/__npm_models__/npm
+which npm
+ls d/__temp_cache__/__node__/npm
+ls d:/__temp_cache__/__node__/npm
+cd d/__temp_cache__/__node__/
+cd d:/__temp_cache__/__node__/
+nvm use 13.12.0 
+nvm uninstall 12.13.0 
+nvm uninstall 10.16.0 
+nvm uninstall 8.11.3 
+node
+nvm use 7
+cd
+npm install npm@3 
+.\node_modules\npm\make.bat 
+.\node_modules\npm\make.bat  -v
+npm install npm@3 -G
+npm install npm@3 -g
+rm package-lock.json 
+npm install gulp
+npm install bower
+npm install gulp -g
+npm install -g cnpm --registry=https://registry.npm.taobao.org
+ssh root@129.211.2.189 -p 5827 "scp -P 43005 root@180.168.71.206:/opt/tomcat/webapps/webroot/WEB-INF/reportlets/nippon/NP0010.cpt /opt/tomcat/webapps/webroot/WEB-INF/reportlets/nippon/NP0010.cpt"
+ssh root@129.211.2.189 -p 5827 "scp -P 43005 root@180.168.71.206:/opt/tomcat/webapps/webroot/WEB-INF/reportlets/nippon/NP0037.cpt /opt/tomcat/webapps/webroot/WEB-INF/reportlets/nippon/NP0037.cpt"
+nvm uninstall 13.12.0 
+npm
+nvm use 7.2.0
+npm 
+npm -g cnpm --registry=https://registry.npm.taobao.org
+cnpm
+npm install -g nrm
+npm i -g cnpm --registry=https://registry.npm.taobao.org --registry https://registry.npm.taobao.org
+npm config set registry https://registry.npm.taobao.org
+npm config get registry 
+npm i -g cnpm --registry=https://registry.npm.taobao.org
+cd /d d:\Documents\logic\xsyy-nippon\
+CD qcs-all\ibm-sds\
+CD front_end
+LS
+npm install -g @2.15.1
+npm install npm@2.15.1 -g
+ npm install -g bower
+ npm install
+npm install --global node-gyp
+cd /d d:\Documents\logic\xsyy-nippon\qcs-all\ibm-sds\front_end
+npm install --global --production windows-build-tools
+npm i -g node-sass
+cd Documents\notes\
+git checkout master 
+git checkout OS-optimization 
+npm install -g npm
+npm i  npm@3.10.9 -g
+nvm uninstall 7.2.0 
+nvm install 7.2.0
+nvm install 5
+nvm use 5.12.0 
+npm install npm@2.15.11 -g
+npm install -g gulp
+npm install -g bower
+npm config set proxy null
+npm config get registry
+npm config set registryhttps://registry.npmjs.org
+npm config set registry https://registry.npmjs.org
+npm get registry 
+rm npm-debug.log 
+npm i npm@3.8.6
+rm -rf node_modules\
+npm i npm@3.8.6 -g
+git add *.html
+git add  ../README.md
+git commit -m "QCS-4493 bug fixed , 添加前端项目启动说明"
+、git status
+cd /d d:\Documents\notes\
+cd ..
+git clone https://github.com/Sayi/poi-tl.git
+git clone https://gitee.com/huangzl/poi-tl-demo.git
+git checkout .
+git checkout ..\..\front_end
+nvm install 10.16.0
+npm install npm -g
+nvm use 10.16.0 
+NPM -V
+npm install -g typescript@3.2.4
+npm config get registery
+npm install -g @angular/cli@7.3.4
+git add *.ts
+git commit -m "EPMS-1669 原料历史"
+node --max_old_space_size=3072 node_modules/@angular/cli/bin/ng serve --open --proxy-config proxy.config.json
+git commit -m "EPMS-1669 解决废气排口审核状态不变的问题"
+cd /d d:\Documents\logic\epms\epms
+cd front_end\
+cd src\app\epms\pages\dynamic-information\pages\facility-operation\pages\facility-operation-history\facility-operation-history-water\facility-operation-history-water.component.html
+cd src\app\epms\pages\dynamic-information\pages\facility-operation\pages\facility-operation-history\facility-operation-history-water\
+git add *.html *.ts
+git commit -m "EPMS-1669 bug fixed"
+cat package.json | grep node
+cd /d d:\Documents\logic\epms\epms\front_end\
+ls
+node --max_old_space_size=12288  node_modules/@angular/cli/bin/ng build --prod=true --optimization=true --sourceMap=false --progress=true --forkTypeChecker=false
+tar cvzf frontend-dist.tar.gz dist
+tar
+rm -rf ../front_end/frontend-dist.tar.gz
+del /?
+nginxd stop -a
+ping www.baidu.com
+netsh winsock reset
+git add *.xml
+git add ../../front_end/src/app/fire-safety-assessment/evaluation-report/report-text-controller.js
+set %JAVA_HOME%
+sysdm.cpl
+set %AppData%
+ssh -T http://172.16.0.108/wudan/pension.git
+git commit -m "SHXF-68 导出word基本实现"
+git  pull && git push
+nvm ls
+nvm use 7.2.0 
+npm install -g npm@3.10.9
+'bower install
+npm rebuild node-sass
+nginxd start 
+git add *.java
+git add *.js
+git add ../../*.html
+git add ../../*.js
+git pull && git push
+scp lele@www.leleplus.fun:~/temp/
+scp d:\Documents\租房材料\*.pdf lele@www.leleplus.fun:~/temp/
+ssh lele@www.leleplus.fun
+idea ../../README.md
+git checkout ../
+git checkout ../../
+git pull
+git fetch
+rm -rf logs\
+git branch
+git checkout feature/fire-assessment
+git add *.yml
+git commit -m "SHXF-68 评估报告导出word"
+git push
+mvn clean
+git checkout client/bestex
+start .
+clear
+node -v
+npm -v
+npm install
+bower install
+gulp serve
+ping 192.168.8.131  
+ssh root@192.168.8.131
+ping 10.181.3.50
+telnet 10.181.3.50 7004
+tcping www.leleplus.fun 3306
+tcping 10.181.3.50 7004
+exit
+cd software\03_cmder\
 git status
 git add .
