@@ -164,7 +164,6 @@ taskkill /f -pid 12520
 git commit -m "登录 登出 失败错误 自动登录 记住密码功能完成"
 git checkout EPMS-1225 
 git pull 
-cd /d d:\software\03_cmder\
 git commit -m "update history"
 git add *.scs
 git commit -m "报表中心帮助图标样式修复"
@@ -563,7 +562,6 @@ git add *.html *.ts
 git commit -m "EPMS-1669 bug fixed"
 cat package.json | grep node
 cd /d d:\Documents\logic\epms\epms\front_end\
-ls
 node --max_old_space_size=12288  node_modules/@angular/cli/bin/ng build --prod=true --optimization=true --sourceMap=false --progress=true --forkTypeChecker=false
 tar cvzf frontend-dist.tar.gz dist
 tar
@@ -590,7 +588,6 @@ git add *.java
 git add *.js
 git add ../../*.html
 git add ../../*.js
-git pull && git push
 scp lele@www.leleplus.fun:~/temp/
 scp d:\Documents\租房材料\*.pdf lele@www.leleplus.fun:~/temp/
 ssh lele@www.leleplus.fun
@@ -600,15 +597,8 @@ git checkout ../../
 git pull
 git fetch
 rm -rf logs\
-git branch
-git checkout feature/fire-assessment
 git add *.yml
 git commit -m "SHXF-68 评估报告导出word"
-git push
-mvn clean
-git checkout client/bestex
-start .
-clear
 node -v
 npm -v
 npm install
@@ -620,7 +610,53 @@ ping 10.181.3.50
 telnet 10.181.3.50 7004
 tcping www.leleplus.fun 3306
 tcping 10.181.3.50 7004
-exit
 cd software\03_cmder\
+git commit -m "添加tcping 工具"
+git push
+open .
+start .
+cat [1]两数之和.java 
+javac [1]两数之和.java 
+-encoding UTF-8 [1]两数之和.java 
+javac -encoding UTF-8 [1]两数之和.java 
+java Solution.class 
+rm *.class
+rm *.java
+javac TwoSum.java 
+javac -encoding TwoSum.javaava 
+javac encoding UTF-8 TwoSum.java 
+ls
+javac TwoSum.class 
+javac TwoSum
+javac TwoSum$Solution -cp TwoSum
+javac -encoding UTF-8 TwoSum.java 
+java TwoSum
+javac -encoding UTF-8 
+javac -encoding UTF-8 ReverseInteger.java 
+java ReverseInteger
+git checkout system-server/src/test/java/com/system/util/quartz/CustomCronExpressionTest.java
+git checkout feature/fire-assessment
+git add *
+git commit -m "SHXF-68 导出word模板文件修改"
+git pull && git push
+git branch -D QCS-4473
+git remote prune origin
+git branch -d bug/QCS-4473
+git branch -d bug/queryUtil-fix-in
+git branch -D bug/queryUtil-fix-in
+git branch -D new-TASK/QCS-4473
+git branch -D task/QCS-4403
+git branch
+git chekcout client/bestex
+git checkout client/bestex
+mvn clean
+exit
+javac PalindromeNumber.java 
+javac PalindromeNumber
+clear
+javac -encoding UTF-8 PalindromeNumber.java 
+java PalindromeNumber
+env
+cd /d d:\software\03_cmder\
 git status
 git add .
