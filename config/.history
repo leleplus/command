@@ -140,7 +140,6 @@ git commit -m "EPMS-1225 处理报表页报错以及修复部分图表的无数�
 git commit -m "EPMS-1225 审核者总览启用无数据样式"
 node --max_old_space_size=3072 node_modules/@angular/cli/bin/ng serve --proxy-config proxy.config.json --port=9999
 git removte -v
-git remote -v
 mkdir temp____emps
 cd temp____emps\
 git clone http://gitlab.logicsolutions.com.cn/alice.li/EPMS.git
@@ -153,7 +152,6 @@ git commit -m "EPMS-1225  管理员端无数据样式"
 rm flyway/src/main/resources/db/migration/V20200609170800__add_index.sql
 qqqqq
 git commit -m "EPMS-1225 管理员执法情况统计，无数据样式"
-git checkout system-server/src/main/resources/application.properties
 git commit -m "更新yml文件"
 ^Z
 netstart -aon | findstr "4664"
@@ -163,7 +161,6 @@ netstat -aon|findstr "1099"
 taskkill /f -pid 12520
 git commit -m "登录 登出 失败错误 自动登录 记住密码功能完成"
 git checkout EPMS-1225 
-git pull 
 git commit -m "update history"
 git add *.scs
 git commit -m "报表中心帮助图标样式修复"
@@ -174,10 +171,6 @@ git stash save "back_end_local_config"
 cd /d D:\Documents\logic\epms\EPMS\front_end 
 cd cd ..\back_end\flyway\
 cd ..\back_end\flyway\
-mysql -uroot -p
-mvn -Dflyway.configFile=flyway-dev.properties flyway:migrate -X
-git sttaus
-git statyus
 git commit -m "注册功能"
 git config user.name "fuguo.wang"
 git config user.email "fuguo.wang@logicsolutions.com.cn"
@@ -231,7 +224,6 @@ git commit -m --amed "页面抖动修复"
 git commit --amed  -m "页面抖动修复"
 git commit --amed "页面抖动修复"
 clean
-git log
 git commit --amed
 git commit --amend -m "页面抖动修复"
 git add *.css
@@ -254,14 +246,12 @@ git commit -m "适配到eclipse"
 git commit -m "eclipse 部署成功"
 git commit -m "update sql script"
 cd /d d:\Documents\idea_workspace\
-cd stroner\
 cd WebContent\
 rm a.jsp 
 git commit -m "删除无用文件"
 ssh www.leleplus.fun
 git diff src/main/java/com/beautiful/common/BaseResponse.java
 git checkout src/main/java/com/beautiful/common/BaseResponse.java
-git checkout *.java
 mysql -hwww.elelplus.fun -uroot -p 
 mysql -hwww.leleplus.fun -uroot -p 
 scp Desktop\stroner.war lele@www.leleplus.fun:~/
@@ -274,10 +264,8 @@ git commit -m "抽象service接口  dao接口  异常父类"
 git commit -m "严格区分三层架构"
 git add src/main/java/com/app/web/servlets/UserServlets.java
 git commit -m "三层架构规范化"
-git add 
 git add  src/main/java/com/app/common/ResponseResultType.java
 git add WebContent\
-git stattus
 git add enterprise-manager.iml
 git commit -m "封装响应结果对象  创建message 页面"
 git add src/main/java/com/app/common/ResponseResult.java
@@ -289,9 +277,6 @@ node --max_old_space_size=3072 node_modules/@angular/cli/bin/ng serve  --proxy-c
 cd d/ d:\Documents\driver\
 cd d/ d:Documents\
 cd d/ d:\Documents\
-d:
-cd Documents\
-cd driver\
 git commit -m "final "
 git add ../back_end/system-server/src/main/java/com/logic/epms/hisservice/
 git add ../back_end/system-server/src/main/java/com/logic/epms/ws/dto/
@@ -311,7 +296,6 @@ git commit -m "EPMS-1669 应急演练  done"
 git git push
  git push
 git stash save "本地配置"
-git stash list
 git stash drop stash@{0}
 tasklist | grep 5996
 taskkill /f /t /pid 5996
@@ -385,18 +369,14 @@ curl -O http://aliimg.changba.com/cache/photo/[260929610-260939610]_640_640.jpg
 curl  http://aliimg.changba.com/cache/photo/[260929610-260939610]_640_640.jpg
 curl -v  http://aliimg.changba.com/cache/photo/[260929610-260939610]_640_640.jpg
 curl -v  http://aliimg.changba.com/cache/photo/[260929610-260939610]_640_640.jpg | grep 200
-cd ../
 rm -rf cutl\
 taskkill /f /im ecplorer.exe && start explorer.exe
 taskkill /f /im explorer.exe && start explorer.exe
 sc delete Mydock
 cat package.json | grep node 
 git checkout ../front_end/proxy.config.json
-nginxd start
-git add *.sql
 git commit -m "修复SQL脚本错误"
 git checkout EPMS-1669
-mvn package
 git commit -m "EPMS-1669 环保信息其他判断接口"
 git statusa
 git commit -m "EPMS-1669 环保信息其它判断"
@@ -454,11 +434,9 @@ git rbanch
 git checkout client/cspc
 git brwanch
 git checkout 
-git checkout feature/nippon-env
 git upll
 taskkill /f /im explorer.exe
 start explorer.exe
-cls
 vi
 mysql -h129.211.2.189 -uroot -p
 ssh root@129.211.2.189 -p 5827 "scp -P 43005 root@180.168.71.206:/opt/tomcat/webapps/webroot/WEB-INF/reportlets/nippon/NP0037.cpt ./
@@ -474,15 +452,12 @@ nvm use 13.12.0
 nvm uninstall 12.13.0 
 nvm uninstall 10.16.0 
 nvm uninstall 8.11.3 
-node
 nvm use 7
-cd
 npm install npm@3 
 .\node_modules\npm\make.bat 
 .\node_modules\npm\make.bat  -v
 npm install npm@3 -G
 npm install npm@3 -g
-rm package-lock.json 
 npm install gulp
 npm install bower
 npm install gulp -g
@@ -497,8 +472,6 @@ npm -g cnpm --registry=https://registry.npm.taobao.org
 cnpm
 npm install -g nrm
 npm i -g cnpm --registry=https://registry.npm.taobao.org --registry https://registry.npm.taobao.org
-npm config set registry https://registry.npm.taobao.org
-npm config get registry 
 npm i -g cnpm --registry=https://registry.npm.taobao.org
 cd /d d:\Documents\logic\xsyy-nippon\
 CD qcs-all\ibm-sds\
@@ -512,36 +485,24 @@ npm install --global node-gyp
 cd /d d:\Documents\logic\xsyy-nippon\qcs-all\ibm-sds\front_end
 npm install --global --production windows-build-tools
 npm i -g node-sass
-cd Documents\notes\
-git checkout master 
-git checkout OS-optimization 
-npm install -g npm
 npm i  npm@3.10.9 -g
 nvm uninstall 7.2.0 
 nvm install 7.2.0
 nvm install 5
 nvm use 5.12.0 
 npm install npm@2.15.11 -g
-npm install -g gulp
-npm install -g bower
 npm config set proxy null
-npm config get registry
 npm config set registryhttps://registry.npmjs.org
 npm config set registry https://registry.npmjs.org
 npm get registry 
 rm npm-debug.log 
 npm i npm@3.8.6
-rm -rf node_modules\
 npm i npm@3.8.6 -g
-git add *.html
 git add  ../README.md
 git commit -m "QCS-4493 bug fixed , 添加前端项目启动说明"
 、git status
-cd /d d:\Documents\notes\
-cd ..
 git clone https://github.com/Sayi/poi-tl.git
 git clone https://gitee.com/huangzl/poi-tl-demo.git
-git checkout .
 git checkout ..\..\front_end
 nvm install 10.16.0
 npm install npm -g
@@ -555,7 +516,6 @@ git commit -m "EPMS-1669 原料历史"
 node --max_old_space_size=3072 node_modules/@angular/cli/bin/ng serve --open --proxy-config proxy.config.json
 git commit -m "EPMS-1669 解决废气排口审核状态不变的问题"
 cd /d d:\Documents\logic\epms\epms
-cd front_end\
 cd src\app\epms\pages\dynamic-information\pages\facility-operation\pages\facility-operation-history\facility-operation-history-water\facility-operation-history-water.component.html
 cd src\app\epms\pages\dynamic-information\pages\facility-operation\pages\facility-operation-history\facility-operation-history-water\
 git add *.html *.ts
@@ -570,62 +530,43 @@ del /?
 nginxd stop -a
 ping www.baidu.com
 netsh winsock reset
-git add *.xml
 git add ../../front_end/src/app/fire-safety-assessment/evaluation-report/report-text-controller.js
 set %JAVA_HOME%
 sysdm.cpl
 set %AppData%
 ssh -T http://172.16.0.108/wudan/pension.git
 git commit -m "SHXF-68 导出word基本实现"
-git  pull && git push
-nvm ls
-nvm use 7.2.0 
-npm install -g npm@3.10.9
 'bower install
 npm rebuild node-sass
-nginxd start 
-git add *.java
 git add *.js
 git add ../../*.html
 git add ../../*.js
 scp lele@www.leleplus.fun:~/temp/
 scp d:\Documents\租房材料\*.pdf lele@www.leleplus.fun:~/temp/
-ssh lele@www.leleplus.fun
 idea ../../README.md
 git checkout ../
 git checkout ../../
-git pull
 git fetch
 rm -rf logs\
-git add *.yml
 git commit -m "SHXF-68 评估报告导出word"
-node -v
-npm -v
-npm install
 bower install
-gulp serve
 ping 192.168.8.131  
-ssh root@192.168.8.131
 ping 10.181.3.50
 telnet 10.181.3.50 7004
 tcping www.leleplus.fun 3306
 tcping 10.181.3.50 7004
 cd software\03_cmder\
 git commit -m "添加tcping 工具"
-git push
 open .
-start .
 cat [1]两数之和.java 
 javac [1]两数之和.java 
 -encoding UTF-8 [1]两数之和.java 
 javac -encoding UTF-8 [1]两数之和.java 
 java Solution.class 
 rm *.class
-rm *.java
 javac TwoSum.java 
 javac -encoding TwoSum.javaava 
 javac encoding UTF-8 TwoSum.java 
-ls
 javac TwoSum.class 
 javac TwoSum
 javac TwoSum$Solution -cp TwoSum
@@ -635,10 +576,8 @@ javac -encoding UTF-8
 javac -encoding UTF-8 ReverseInteger.java 
 java ReverseInteger
 git checkout system-server/src/test/java/com/system/util/quartz/CustomCronExpressionTest.java
-git checkout feature/fire-assessment
 git add *
 git commit -m "SHXF-68 导出word模板文件修改"
-git pull && git push
 git branch -D QCS-4473
 git remote prune origin
 git branch -d bug/QCS-4473
@@ -646,17 +585,568 @@ git branch -d bug/queryUtil-fix-in
 git branch -D bug/queryUtil-fix-in
 git branch -D new-TASK/QCS-4473
 git branch -D task/QCS-4403
-git branch
 git chekcout client/bestex
-git checkout client/bestex
-mvn clean
-exit
 javac PalindromeNumber.java 
 javac PalindromeNumber
-clear
 javac -encoding UTF-8 PalindromeNumber.java 
 java PalindromeNumber
-env
 cd /d d:\software\03_cmder\
+git commit -m "添加Windows环境变量管理工具"
+java
+git checkout system-server/src/test/java/com/system/nontice/SystemNotice.java
+git stash --save "bestex-local"
+git stash save "bestex-local"
+set JAVA_HOME
+cd /d D:\software\15_jdk\jdk-14.0.1
+D:\software\15_jdk\jdk-14.0.1cenv
+cmdefr
+mvn -v
+rm -rf system-server/src/main/resources/META-INF/
+server.sh
+/bin/sh  D:/Documents/logic/xsyy-nippon/qcs-all/ibm-sds/back_end/logic-microservices-parent/z-bin/server.sh 
+cd system-server\target\
+java -jar system-server-2.6.jar
+git add ../src/main/java/com/system/util/doc/impl/WordGeneratorTool.java
+git commit -m "SHXF-68 修复打包后读取模板文件错误"
+cd /d d:\Documents\notes\
+git commit -m "java排坑记录"
+cd d:\Documents\logic\qibao\
+rm -rf *
+cd Ionic-v2\
+cd ..\..\Ionic-v2\
+cd QibaoCommunity\
+cmder
+cd /d d:\Documents\logic\qibao\
+svn checkout .
+svn help checkout
+svn checkout *
+svn revert .
+svn status
+set 
+set | grep "C:\Users\witt"
+set | grep C:\Users\witt
+set | findstr "C:\Users\witt"
+sfc /acannow
+sfc /SCANNOW
+Dism /Online /Cleanup-Image /ScanHealth
+Dism /Online /Cleanup-Image /CheckHealth
+DISM /Online /Cleanup-image /RestoreHealth
+ls -a
+rm .idea\
+java --version
+env
+set JAVA_HOME="%JDK11%"
+set JAVA_HOME=%JDK11%
+set path
+set java_home= $set jdk11
+set java_home
+set jdk8
+set jdk14
+set jdk11
+wget https://dbeaver.io/files/dbeaver-ce-latest-win32.win32.x86_64.zip
+mkdir db
+cd db\
+curl -o https://dbeaver.io/files/dbeaver-ce-latest-win32.win32.x86_64.zip
+curl https://dbeaver.io/files/dbeaver-ce-latest-win32.win32.x86_64.zip
+curl -O https://dbeaver.io/files/dbeaver-ce-latest-win32.win32.x86_64.zip
+curl -# -O https://dbeaver.io/files/dbeaver-ce-latest-win32.win32.x86_64.zip
+git checkout client/cspc 
+rm -rf 
+git clean -df
+git clean -ndf
+java -version
+javac RomanToInteger.java 
+javac -encoding UTF-8 RomanToInteger.java 
+java RomanToInteger
+javac -encoding LongestCommonPrefix.java 
+javac -encoding UTF-8 LongestCommonPrefix.java 
+java LongestCommonPrefix
+wget https://d.pcs.baidu.com/file/9c621add4a09a65359a41aac699d807a?fid=2126005771-250528-11754417246587&dstime=1594263946&rt=sh&sign=FDtAERyK-DCb740ccc5511e5e8fedcff06b081203-YtwVhhICh0YzLiM9%2FvhpDzs7O9I%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=9029045322692811747&dp-callid=0&r=993569974&clienttype=25&origin=dlna&vip=2&vuk=2126005771&sh=1
+rm -rf poi-tl-demo\
+javac -encoding UTF-8 ImplementStrstr.java 
+java ImplementStrstr
+cd../
+ld
+rm *.java
+rm *
+mkdir blogs
+git clone https://gitee.com/mukedada/mblog.git
+mysql -uroot -p
+mvn package
+cd
+cd ~
+cd .
+java -jar mblog-latest.jar 
+mkdir code-movers
+mkdir front_end
+git clone git clone https://github.com/PanJiaChen/vue-element-admin.git
+git config --global http.postBuffer 524288000
+git clone https://github.com/PanJiaChen/vue-element-admin.git
+mv vue-element-admin\ admin
+nvm install latest 
+npm install --registry=https://registry.npm.taobao.org
+d:
+d:/
+d:\
+cd d:/
+nvm ls
+nvm use 14.5.0 
+npm install -g npm
+npm config set registry https://registry.npm.taobao.org
+npm config get registry 
+npm run dev
+npm run preview
+git clone https://github.com/PanJiaChen/vue-admin-template.git
+cd admin\
+rm -rf admin\
+npm install -g @vue/cli
+vue upgrade
+git checkout system-server/src/main/java/com/simcere/
+git checkout system-server/src/main/java/com
+git reset HARD system-server/src/main/java/com/simcere/
+mvn celan
+git add system-server/src/main/resources/application-dev-bestex.yml
+git commit -m "代码生成插件修改"
+rm back_end/code-generator-logic-nj/src/main/java/com/logic/nj/generator/Main.java
+cd code-generator-logic-nj\
+git add system-server/src/main/java/com/system/util/interceptor/ReadPageInterceptor.java
+git commit -m "完善代码生成插件，解决dto与pojo互转，部分数据为null的bug"
+git add system-server/src/main/resources/com/bestex/
+git checkout system-server/src/main/resources/application-dev-bestex.yml
+git clean -nf
+git checkout system-server/src/main/java/com/system/enums/ErrorMessageEnum.java
+rm flyway/src/main/resources/db/migration/V20200713113346__create_bestex_meeting.sql
+git stash
+git commit -m "BEST-51 会议管理  接口完成，同时优化部分代码"
+npm run serve
+npm run gupl
+npm run gulp
+rm -rf node_modules\
+nvm use 8.11.3
+npm install -g npm@5.6.0
+nvm use 7.2.0 
+npm install -g npm@3.10.9
+rm D:\__temp_cache__\__npm_models__\node_modules\
+rm D:\__temp_cache__\__npm_models__\node_modules\ -rf
+npm install -g npm@3.10.9 --force
+npm cache clean --force
+rm package-lock.json 
+npm config get registry
+git commit -m "代码生成插件bugfix"
+git add system-server/pom.xml system-server/src/main/java/com/system/
+git commit -m "BEST-83 附件上传添加图片缩略图，七月附件使用图标"
+git commit -m "BEST-83 附件bug修复，附件缩略图功能未测试"
+git commit -m "BEST-55 安全协议管理"
+git commit -m "BEST-51 会议管理附件"
+date
+echo date
+git add flyway/src/main/resources/db/migration/V20200713113346__create_bestex_meeting.sql
+git add flyway/src/main/resources/db/migration/V20200714114000__create_bestex_security_protocol_management.sql
+git commit -m "BEST-51 BEST-55 会议 安全协议  增加提交记录，数据库乱码"
+git diff code-generator-logic-nj/target/classes/ftls/Service.ftl
+git rm -rf --cached code-generator-logic-nj/target/
+git add ../../
+git commit -m "BEST-63 基础信息填报完成"
+git commit -m "BEST-65 安全活動"
+git clean *.java
+npm install --verbose
+npm config
+npm config ls
+start C:\Users\witt
+exity
+node -v
+npm -v
+npm install
+npm cache clean -f
+npm install -g gulp
+npm install -g bower
+git add code-generator-logic-nj/src/main/resources/generator.yaml
+git commit -m "BEST-75 合理化建議接口"
+git commit -m "BEST-75 合理化建议免登陆接口"
+git commit -m "BEST-75 合理化建议免登陆接口配置"
+git  pull && git push
+git commit -m "BEST-69 制度"
+git add *.sh
+git commit -m "构建跳过测试"
+git statu7s
+\git add *.java
+git commit -m "BEST-69 BEST-75 BEST-66 BEST-64 企业记录添加限制校验"
+git checkout feature/fire-assessment
+git commit -m "BEST-83 打分表完成"
+ping http://v12s26.safety-observation.usequantum.com.cn/V6/#/auth/login
+http://v12s26.safety-observation.usequantum.com.cn/V6
+ping http://v12s26.safety-observation.usequantum.com.cn/V6
+ping http://v12s26.safety-observation.usequantum.com.cn
+ping http://v12s26.safety-observation.usequantum.com.cn/
+git add flyway/src/main/resources/db/migration/V20200720175508__add_organization.sql
+git commit -m "BEST-103 组织架构录入脚本"
+git commit -m "BEST-103 脚本调整"
+git add system-server/src/main/java/com/system/service/IAutoNumberService.java system-server/src/main/java/com/system/service/impl/AutoNumberService.java
+git commit -m "BEST-83 编号重复"
+git stattus
+git add flyway/src/main/resources/db/migration/V20200721112546__update_role.sql 
+git commit -m "BEST-83 admin 角色修改"
+tcping https://minstall-test.toshiba-elevator.cn/
+git checkout git status
+git checkout *.java
+git diff system-server/src/main/java/com/system/service/impl/UserService.java
+git add ArrayList
+cd Documents\logic\
+cd qcs-all\ibm-sds\front_end
+git commit -m "BEST-83 职称配置"
+git commit -m "解决DTO转POJO时日期解析错误"
+git commit -m "BEST-83 员工角色迁移替换"
+git commit -m "BEST-51 会议字段添加"
+git checkout src\
+git add *.yml
+git commit -m "BEST-83 附件缩略图"
+git sttaus
+git commit -m "BEST-83 DTO转POJO日期；类型处理"
+git add ..\back_end\*.xml ..\back_end\*.java
+git add ..\back_end\*.sql
+git commit -m "BEST-83 附件和安全协议字段调整"
+git add flyway/src/main/resources/db/migration/V20200723171342__alter_table.sql
+git add flyway/src/main/resources/db/migration/V20200722175710__alter_table.sql
+git commit -m "BEST-51 会议字段调整"
+git pulll
+cd dongzhi\
+svn -v
+svn -version
+svn help
+svn checkout svn://svn.logicsolutions.com.cn/svnrepos/Toshiba-Elevator/branches/regular-check-20181210
+git  status
+git add system-server/src/main/java/com/system/service/impl/FileService.java
+git commit -m "BEST-83 附件bug"
+cd Documents\logic\epms\
+cd EPMS
+cd qcs-all\ibm-sds\
+git add system-server/src/main/java/com/system/service/IOrganizationService.java system-server/src/main/java/com/system/service/impl/OrganizationService.java
+git statyus
+git add system-server/src/main/java/com/bestex/service/impl/BasicInformationService.java system-server/src/main/java/com/bestex/service/impl/MeetingService.java
+git commit -m "BEST-51 BEST-66 BEST-64 BEST-55接口调整"
+net mysql stop
+net  stop mysql
+net  start mysql
+git remote set-url origin git@gitlab.com:logic-solutions/quantum/qcs-all.git
+git commit -m "BEST-83 权限"
+cles
+git commit -m "BEST-51 BEST-55 BEST-64 BEST-66 queryUtil日期格式"
+git stash save "location"
+git checkout client/simcere
+git stash apply stash@{0}
+git add system-server/src/main/resources/com/bestex/persistence/read/MeetingReadMapper.xml system-server/src/main/resources/com/bestex/persistence/write/MeetingWriteMapper.xml
+git add system-server/src/main/java/com/bestex/domain/Meeting.java
+git add system-server/src/main/java/com/bestex/ws/dto/MeetingDTO.java
+git checkout system-server/src/main/resources/application.properties
+git commit -m "BEST-51 自动编号"
+git commit -m "sql bug"
+git add system-server/src/main/java/com/bestex/service/impl/MeetingService.java
+git commit -m "BEST-51 会议编号"
+git add system-server/src/main/java/com/system/service/impl/TaskReferenceService.java
+git commit -m "big fixed"
+git add system-server/src/main/java/com/system/util/CommonResultMap.java
+git commit -m "BEST-83 组织架构"
+git add system-server/src/main/resources/com/bestex/persistence/write/RationalizationSuggestionWriteMapper.xml
+git add flyway/src/main/resources/db/migration/V20200729151403__add_system_code.sql
+git add system-server/src/main/java/com/bestex/ws/dto/RationalizationSuggestionDTO.java
+git add system-server/src/main/java/com/bestex/domain/RationalizationSuggestion.java
+git commit -m "BEST-75 合理化建议字段调整"
+git add system-server/src/main/resources/com/bestex/persistence/read/SafetyActivityReadMapper.xml
+git add system-server/src/main/java/com/system/service/impl/TableRelationService.java
+git add system-server/src/main/resources/com/bestex/persistence/read/BasicInformationReadMapper.xml
+git add system-server/src/main/resources/com/bestex/persistence/read/RationalizationSuggestionReadMapper.xml
+git commit -m "BEST-83 附件"
+git add system-server/src/main/java/com/bestex/service/impl/SafetyActivityService.java
+git add system-server/src/main/java/com/bestex/ws/dto/SafetyActivityDTO.java
+git commit -m "bug fix"
+git add system-server/src/main/java/com/system/util/QueryUtil.java
+git add system-server/src/main/resources/com/bestex/persistence/write/MessageGroupWriteMapper.xml
+git add system-server/src/main/resources/com/bestex/persistence/write/MessageDetailWriteMapper.xml
+git add system-server/src/main/resources/com/bestex/persistence/read/MessageGroupReadMapper.xml
+git add system-server/src/main/resources/com/bestex/persistence/read/MessageDetailReadMapper.xml
+git add system-server/src/main/java/com/bestex/domain/MessageDetail.java system-server/src/main/java/com/bestex/domain/MessageGroup.java
+git add system-server/src/main/java/com/bestex/persistence/read/MessageDetailReadMapper.java system-server/src/main/java/com/bestex/persistence/read/MessageGroupReadMapper.java  system-server/src/main/java/com/bestex/persistence/write/MessageDetailWriteMapper.java system-server/src/main/java/com/bestex/persistence/write/MessageGroupWriteMapper.java system-server/src/main/java/com/bestex/service/IMessageDetailService.java  system-server/src/main/java/com/bestex/service/IMessageGroupService.java system-server/src/main/java/com/bestex/service/impl/MessageDetailService.java  system-server/src/main/java/com/bestex/service/impl/MessageGroupService.java  system-server/src/main/java/com/bestex/ws/MessageGroupRest.java  system-server/src/main/java/com/bestex/ws/dto/MessageGroupDTO.java
+git add system-server/src/main/java/com/bestex/common/ConstantCodeEnums.java
+git commit -m "BEST-77 消息群组"
+git add system-server/src/main/resources/com/system/persistence/read/UserReadMapper.xml
+git add  system-server/src/main/resources/com/system/persistence/write/SystemMessageWriteMapper.xml  system-server/src/main/resources/com/system/persistence/write/SystemMessageFileWriteMapper.xml system-server/src/main/java/com/system/ws/dto/MessageDTO.java 
+git diff system-server/src/main/java/com/bestex/ws/MeetingRest.java
+git checkout system-server/src/main/java/com/bestex/ws/MeetingRest.java
+git diff system-server/src/main/java/com/qcs/inspection/ws/InspectionRest.java
+git add system-server/src/main/java/com/qcs/inspection/ws/InspectionRest.java
+git add system-server/src/main/java/com/system/domain/SystemMessage.java
+git add system-server/src/main/java/com/system/domain/SystemMessageFileKey.java
+git add system-server/src/main/java/com/system/service/impl/MessageService.java system-server/src/main/java/com/system/ws/MessageRest.java
+git push 
+git add code-generator-logic-nj/code-generator-logic-nj.iml
+java status
+git stash clear
+git stash save "wechat"
+git stash pop
+git stash list
+git commit -m "BEST-104 暂存企业微信同步"
+git commit -m "BEST-35 检查地点改建筑物"
+git checkout .
+feature/nippon-env
+git checkout feature/nippon-env
+git branch
+git checkout client/bestex
+git checkout system-server/src/main/java/com/quantum/training/ws/CertificationRest.java
+git commit -m "BEST-77 消息公告调整"
+netstat -ano | grep "8099"
+netstat -ano | grep "8090"
+tasklist | grep "7184"
+taskkill /pid /f 7184
+taskkill /f /pid  7184
+ping http://i2k.logicsolutions.com:18080/index.jsp
+Ping 请求找不到主机 http://i2k.logicsolutions.com
+ip config
+ssh witt@192.168.1.154
+netsh interface portproxy add v4tov4 listenaddress=192.168.1.154 listenport=9999 connectaddress=192.168.8.131 connectport=3306
+ping 192.168.1.154
+git add *.sql *.java
+git commit -m "BEST-83 角色关联模块脚本"
+git checkout src/app/training/training-management/lesson-management/main-record.html
+cd D:\Documents\logic\qcs-all\ibm-sds\back_end\logic-microservices-parent\flyway
+netsh interface portproxy add v4tov4 listenaddress=172.20.53.1 listenport=14941 connectaddress=172.20.53.2 connectport=3389
+netsh interface portproxy show v4tov4
+git commit -m "sql 脚本"
+cd ..\back_end\logic-microservices-parent\flyway\
+cd back_end\logic-microservices-parent\flyway\
+mvn -Dflyway.configFile=flyway-dev-bestex.properties.properties flyway:migrate -X
+mvn -Dflyway.configFile=flyway.properties.properties flyway:migrate -X
+git add flyway/src/main/resources/db/migration/V20200803163505__role_permission.sql
+git commit -m "BEST-83 角色菜单录入"
+git pull 
+git commit -m "BEST-78 消息列表和详情页"
+git commit -m ""
+git commit -m "BEST-78 消息群组菜单"
+git commit -m "权限"
+node
+git add src/
+git add  system-server/
+git commit -m "BEST-77 消息公告"
+git add flyway/src/main/resources/db/migration/V20200806095227__equipment.sql
+git commit -m "BEST-57 设备管理数据库"
+mvn clean 
+git add code-generator-logic-nj/
+git commit -m "BEST-57 设备管理接口"
+git add system-server/src/main/resources/com/bestex/persistence/read/BestexIncidentReadMapper.xml
+git commit -m "修复结果集bug"
+git commit -m "BEST-57 設備狀態code"
+git add system-server/src/main/java/com/bestex/service/IFireBasicService.java  system-server/src/main/java/com/bestex/ws/FireBasicRest.java system-server/src/main/java/com/bestex/service/impl/FireBasicService.java  system-server/src/main/java/com/bestex/ws/FireBasicRest.java
+git commit -m "消防基础信息提交接口"
+git commit -m "BEST-57 设备管理"
+git commit -m "BEST-57 设备检测提醒"
+status
+git add ../../front_end/src/app/system/message-group/
+git add ../../front_end/src/app/common/services/query-service.js  
+git add src/assets/i18n/
+git add *.html
+git commit -m 
+git commit -m "BEST-78 消息和消息群組前端"
+git commit -m "免登陆白名单"
+git commit -m "合理化建议白名单"
+git add ../../front_end/src/app/index.js
+git commit -m "消息"
+git commit -m "合理化建议前端"
+git commit -m "安全协议管理 调整"
+git add  system-server/src/main/java/com/system/enums/MailTypeEnum.java  system-server/src/main/java/com/system/enums/MessageTypeEnum.java system-server/src/main/java/com/system/filter/RestRequestFilter.java system-server/src/main/java/com/system/util/SysUtil.java  system-server/src/main/resources/com/bestex/persistence/read/SecurityProtocolManagementReadMapper.xml 
+git diff system-server/src/main/java/com/bestex/domain/SecurityProtocolManagement.java
+git diff system-server/src/main/java/com/quantum/training/service/impl/LessonService.java
+git checkout system-server/src/main/java/com/quantum/training/service/impl/LessonService.java
+git add system-server/src/main/java/com/qcs/quartz/jobs/TaskGeneratorService.java
+git commit -m "BEST-108 已修复，安全协议管理提醒任务"
+git add flyway/src/main/resources/db/migration/V20200810152000__scoring_table.sql
+git commit -m "BEST-83 打分表调整"
+git push
+git add system-server/src/main/resources/com/qcs/configuration/persistence/read/CorporateContactReadMapper.xml
+git add system-server/src/main/resources/com/qcs/configuration/persistence/read/PhysicalContactReadMapper.xml
+git     status
+git add system-server/src/main/resources/com/bestex/persistence/write/ScoringTableWriteMapper.xml system-server/src/main/java/com/qcs/configuration/service/impl/ContactService.java system-server/src/main/java/com/bestex/service/impl/ScoringTableService.java
+git add system-server/src/main/java/com/quantum/training/domain/ClassRoster.java
+git add system-server/src/main/java/com/system/ws/dto/QuestionDTO.java
+git add system-server/src/main/java/com/qcs/configuration/service/impl/ContactService.java 
+git checkout ../../front_end/gulp/proxy.js
+git add 
+git add system-server/src/main/java/com/system/util/excel
+git add system-server/pom.xml
+git commit -m "BEST-53 培训管理"
+git add system-server/src/main/java/com/bestex/ws/dto/ScoringTableDTO.java  system-server/src/main/java/com/system/persistence/read/QuestionReadMapper.java  system-server/src/main/resources/com/bestex/persistence/read/ScoringTablePartitionReadMapper.xml  system-server/src/main/resources/com/system/persistence/read/QuestionReadMapper.xml
+git commit -m "打分表"
+git add system-server/src/main/java/com/bestex/service/IScoringTablePartitionService.java  system-server/src/main/java/com/bestex/service/impl/ScoringTablePartitionService.java  system-server/src/main/java/com/bestex/ws/ScoringTablePartitionRest.java
+git add system-server/src/main/java/com/system/util/SysUtil.java  system-server/src/main/resources/com/bestex/persistence/read/ScoringTablePartitionReadMapper.xml 
+git commit -m "组织架构数据重复"
+git add system-server/src/main/java/com/bestex/service/impl/ScoringTableService.java
+git commit -m "BEST-83 打分表"
+cd flyway\
+clear
+mvn -Dflyway.configFile=flyway-dev.properties flyway:migrate -X
+git diff ../system-server/src/main/java/com/bestex/service/impl/ScoringTableService.java
+git commit -m "BEST-103 导入用户员工"
+git diff system-server/src/main/java/com/qcs/configuration/service/impl/CorporateContactService.java
+git add system-server/src/main/java/com/qcs/configuration/domain/EmployeePhysical.java
+git add system-server/src/main/java/com/qcs/configuration/service/impl/ContactService.java
+git add system-server/src/main/java/com/qcs/configuration/service/impl/CorporateContactService.java
+git commit -m "BEST-83 职称配置 ，员工迁移"
+git add system-server/src/main/java/com/quantum/training/ws/ClassRosterRest.java
+git add system-server/src/main/resources/application.properties
+git commit -m "BEST-53 上传excel"
+git add flyway/src/main/resources/db/migration/V20200812113814__add_job.sql 
+git commit -m "BEST-83 添加job"
+ git status
+git add system-server/src/main/java/com/system/util/SysUtil.java
+cls
+git diff system-server/pom.xml
+git add system-server/pom.xml 
+git add system-server/src/main/resources/com/qcs/configuration/persistence/read/EmployeeReadMapper.xml *.java
+git commit -m "BEST-53 培训Excel"
+git commit -m "BEST-109 bugfix 前端问题"
+git add system-server/src/main/java/com/bestex/service/impl/RationalizationSuggestionService.java
+git commit -m "BEST-155 合理化建议 取消同月提交一笔记录限制"
+git add flyway/src/main/resources/db/migration/V20200720180508__add_organization.sql
+git commit -m "BEST-83 组织架构重复数据"
+git commit -m "消息bug fixed"
+git add system-server/src/main/resources/com/system/persistence/read/SystemMessageReadMapper.xml  ../../front_end/src/app/system/message/message-detail.html ../../front_end/src/app/system/message/message-detail.js
+git add ../../front_end/src/app/system/message/message-list.js
+git commit -m "BEST-78 bugfixed"
+git commit -m "BEST-77 消息未读接口新增app"
+git add system-server/src/main/java/com/quantum/training/service/impl/ClassRosterService.java
+git commit -m "BEST-53 Excel 文件名乱码"
+mvn clean
+cls && git status
+git add system-server/src/main/resources/
+git commit -m "BEST-53 BEST-77 培训模块Excel 测试结束，解决死锁问题 恢复消息旧userId接收人逻辑 修复若干bug"
+scp 班级排课模板.xlsx root@192.168.8.131:/opt
+git diff system-server/src/main/resources/com/bestex/persistence/read/SafetyActivityReadMapper.xml
+git add flyway/src/main/resources/db/migration/V20200814100233__alter_table.sql
+git commit -m "BEST-153 内容字段长度不够"
+ipconfig
+git add ../../front_end/src/app/system/message-group/message-group-list.js 
+git add
+git add ../../front_end/src/app/
+git add *.sql add *.java *.xml
+git add *.jxml
+git commit -m "BEST-169"
+git commit -m "BEST-173 已修复"
+git add system-server/src/main/resources/com/system/persistence/read/TaskReferenceReadMapper.xml
+git commit -m "SQL bug"
+git add *.xaml
+git add ../../front_end/src/
+git commit -m "BEST-164 消息实时推送添加轮询"
+git add system-server/src/main/java/com/bestex/service/impl/EquipmentManagerService.java
+git commit -m "MG-18 修复bug"
+git add system-server/src/main/resources/com/system/persistence/read/SystemMessageReadMapper.xml
+git commit -m "BEST-78 消息"
+git commit -m "BEST-79 导入证书数据，修改表格"
+git commit -m "BEST-79 设备报表"
+git add ../../front_end/src/app/system/
+git diff system-server/src/main/java/com/bestex/service/impl/SafetyActivityService.java
+git add ../../front_end/src/app/training/training-management/certificate-management/modals/certificate-edit-modal-comtroller.js
+git commit -m "证书管理，类别下拉修复"
+wget https://github.com/pbatard/rufus/releases/download/v3.11/rufus-3.11p.exe
+ssh lele@www.leleplus.fun
+ssh lele@47.103.215.243
+git commit -m "光标"
+git checkout master 
+nginxd start 
+ssh root@192.168.8.121
+git add *.java  *.xml
+git commit -m "BEST-79 总持证数报表完成，设备报表调整"
+git commit -m "BEST-79 特种设备作业人员持证率 报表接口 "
+git commit -m "BEST-79 接口共用  特种作业人员持证率报表"
+cd Documents\notes\
+git checkout OS-optimization 
+git pull
+git add ../../front_end/src/components/header/header-controller.js
+git commit -m "BEST-218 消息轮询改为1分钟，所有一月鉴定一次的校验逻辑修改"
+git add ../../front_end/src/assets/i18n/
+git commit -m "BEST-212 前端翻译异常"
+git commit -m "BEST-79 总培训率报表完成"
+git add system-server/src/main/java/com/bestex/service/impl/CountersignRecordService.java
+git commit -m "会签bug"
+git add *.sql
+git commit -m "BEST-79 新增课程类型"
+git commit -m "BEST-79 新工培训和在岗培训报表接口"
+git commit -m "BEST-79 报表接口迁移"
+git pull  && git push
+git commit -m "BEST-79 集团新工培训数据统计报表"
+cd Documents\logic\qcs-all\ibm-sds\front_end
+git add system-server/src/main/java/com/bestex/service/impl/HiddenDangerReportService.java
+git add system-server/src/main/java/com/qcs/inspection/ws/dto/DeviationDTO.java
+git commit -m "BEST-79 隐患分类报表"
+git commit -m "BEST-79 隐患分级报表接口"
+git commit -m "BEST-121 限制用户只能看到自己所属组织架构的事故列表"
+git add *.java *.xml
+git commit -m "BEST-121 事故列表，用户只能看到自己及其以下组织架构的列表"
+nginxd start
+exit
+git add src/app/safety/regulatory-system/regulatory-system-edit-controller.js
+git add src/app/safety/regulatory-system/regulatory-system-list-controller.js
+git add *.json
+git commit -m "bug fixed"
+cd Documents\
+cd blogs\
+cd mblog\
+rm -rf blogs\
+cd code-movers\
+cd front_end\
+cd ..\
+cd front_end\vue-admin-template\
+git remote -v
+start cd ../../../
+cd ../../../
+cd driver\
+'start .
+rm -rf driver\
+cd vue-element-admin-4.4.0\
+rm -rf vue-element-admin-4.4.0\
+cd work
+git commit -m " "
+git reset --soft HARD
+git reset --soft ~HARD
+git reset --soft ^HARD
+git log
+git reset --soft c4c334272f85d
+git commit -m "commit "
+rm -rf work
+cd idea_workspace/
+cd maven_plugins\
+cd restfull-generator\
+cd enterprise-manager\
+cd stroner\
+cd ..
+rm -rf idea_workspace\
+cd __sts_workspace\
+cd workspace\
+cd database-go-on\
+cd front_end
+git status 
+git commit -m "BEST-215 班级排课导入Excel,调整为，用户不存在，自动创建"
+git status‘
+git diff ../../front_end/src/app/safety/regulatory-system/regulatory-system-edit-controller.js
+gulp serve
+git add ../../front_end/src/app/safety/regulatory-system/regulatory-system-edit-controller.js
+git commit -m "冲突解决"
+git pull && git push
+ssh root@192.168.8.131
+start .
+cd ../../../../
+cd ..\Documents\
+cd ..\Downloads\
+ls
+scp 班级排课模板.xlsx root@192.168.1.131:/opt/
+scp 班级排课模板.xlsx root@192.168.8.131:/opt/
+git add *.xml
+git add *.java
+git commit -m "隐患报表暂存"
+git pull && git push 
+cd Documents\logic\qcs-all\ibm-sds\
+cd ../../
+cd ../
+cd notes\
+git 
+cd software\
+cd 03_cmder\
 git status
 git add .
